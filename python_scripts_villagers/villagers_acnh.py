@@ -54,10 +54,32 @@ class ACP_Combine:
         ACP_2021 = ACP_2021.reset_index(drop = True)
 
         return ACP_2021
+    
+    def get2022ACP(self):
+
+        ACP_PollRes2022 = pd.DataFrame()
+        for root, dirs, files in os.walk(self.path_file):
+            for file in files:
+                filename = file
+                print(filename)
+                if '2022' in filename:
+                    df = pd.read_excel(self.path_file+filename)
+                    df = df[['Villagers','Tally']]
+                    #df = df[df['Villagers']].notna()
+                    ACP_PollRes2022 = ACP_PollRes2022.append(df)
+        
+        # Getting full tally of votes for Villagers with groupby
+        ACP_2022 = ACP_PollRes2022.groupby(by = 'Villagers',dropna=True).Tally.sum().reset_index()
+        # Sorting in asecending order
+        ACP_2022 = ACP_2022.sort_values(['Tally'], ascending = False)
+        # Resetting index
+        ACP_2022 = ACP_2022.reset_index(drop = True)
+
+        return ACP_2022
 
     # Concat of two ACP polls into one df
-    def combine_clean_ACP(self,f1,f2):
-        ACP_FinalDF = pd.concat([f1, f2], axis=0)
+    def combine_clean_ACP(self,f1,f2,f3,path_out):
+        ACP_FinalDF = pd.concat([f1, f2, f3], axis=0)
 
         # Repeating the same groupby process about to the get the total 
         # tally sum of voted from Animal Crossing Portal by villager
@@ -96,10 +118,11 @@ class ACP_Combine:
             not be in our Villagers datset. 
             When joining the two data sets villagers.csv and the ACP_FinalDF they will disappear :)"""
         
-        return ACP_FinalDF.to_csv(self.path_file+"ACP_Final.csv")
+        return ACP_FinalDF.to_csv(path_out+"ACP_Final.csv")
     
-start_acp = ACP_Combine("/Users/jacquelineskunda/Documents/GitHub/699/SIADS_699_CAPSTONE/ACP_POLLS/")
+start_acp = ACP_Combine("./ACP_POLLS/")
 acp2020 = start_acp.get2020ACP()
 acp2021 = start_acp.get2021ACP()
-final_acp = start_acp.combine_clean_ACP(acp2020,acp2021)
+acp2022 = start_acp.get2022ACP()
+final_acp = start_acp.combine_clean_ACP(acp2020,acp2021,acp2022,path_out="../SIADS_699_CAPSTONE/python_scripts_villagers/")
 
