@@ -1,23 +1,44 @@
 import pandas as pd
 import matplotlib as plot
 import numpy as np
+import requests
 import time
 #import pytrends
 from pytrends.request import TrendReq
 # pytrend = TrendReq(hl='en-US', tz=360)
+import configparser
 
 class fetch_trends:
     def __init__(self, path_file):
         self.path_file = path_file
     def get_trends(self):
         # pytrend = TrendReq(hl='en-US', tz=360)
-        requests_args = {'headers': {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'
+        parser = configparser.ConfigParser()
+        parser.read("cookie_config.txt")
+
+        Cookies = parser.get("config", "CookieStrings")
+        requests_args = {'headers' : {
+            'Accept': 'application/json, text/plain, */*',
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Safari/605.1.15',
+            'Connection': 'keep-alive',
+            # 'Content-Type': 'application/x-www-form-urlencoded;charset=utf-8',
+            # 'Host': 'aa.google.com',
+            'Accept-Language': 'en-US,en;q=0.9',
+            # 'Origin': 'https://trends.google.com',
+            # 'Referer': 'https://trends.google.com/',
+            'Cookie': Cookies
+            # 'Priority': 'u=3, i',
         }
         }
-        
+
+
+        #requests_args = {'headers': {
+        #'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'
+        #}
+        #}
+        #
         # pytrends = TrendReq(hl='en-US', tz=360, timeout=(10,25), retries=2, backoff_factor=1, requests_args={'verify':False})
-        pytrends = TrendReq(hl='en-US', tz=360, requests_args=requests_args)
+        pytrends = TrendReq(tz=360, requests_args=requests_args,backoff_factor=2,retries=5)
         
         acnh_villagers= pd.read_csv(self.path_file + "villagers.csv")
         
@@ -34,15 +55,17 @@ class fetch_trends:
         
         trends = dict()
         for i in kw_listed:
+            print(i)
             ##build out query the code commented out was for original run in 2021 during Milestone 1
             # pytrend.build_payload([i],timeframe='2020-03-20 2021-11-24')
-            pytrends.build_payload(kw_list=[i],timeframe='today 5-y')
-            time.sleep(30)
+            pytrends.build_payload(kw_list=[i],timeframe='2020-03-20 2023-03-10')
+            # 
+            # time.sleep(30)
             ##save trend to dictionary
             trends[i] = pytrends.related_queries()[i]
 
             # sleep to avoid 429 error 
-            time.sleep(60)
+            time.sleep(10)
 
         acnh_dict = dict()
         for item in acnh_villagers_two:
@@ -69,8 +92,7 @@ class fetch_trends:
 
         return finalVillagerdf.to_csv(self.path_file+"/final_pytrends.csv",index = False)
 
-    
-start_acnh_pytrends = fetch_trends("/Users/jacquelineskunda/Documents/GitHub/699/SIADS_699_CAPSTONE/python_scripts_villagers/")
+start_acnh_pytrends = fetch_trends("./python_scripts_villagers/")
 trend_payloads = start_acnh_pytrends.get_trends()
 print(trend_payloads)
 final_trends = start_acnh_pytrends.convert_results(trend_payloads)
