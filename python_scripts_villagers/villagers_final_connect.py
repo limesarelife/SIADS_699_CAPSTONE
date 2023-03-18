@@ -76,7 +76,7 @@ class Connect_Res_Vill():
         #checking number of rows for correctness and number of proper villagers
         print(final_villagers_ACNH.shape)
         
-        return final_villagers_ACNH.to_csv(self.path_out+'villagers_acnh_votes_combined.csv')
+        return final_villagers_ACNH.to_csv(self.path_out+'villagers_acnh_votes_combined.csv', index = False)
     
 
 start_connect = Connect_Res_Vill(path_file_pytrend ="./python_scripts_villagers/final_pytrends.csv",
