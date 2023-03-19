@@ -61,8 +61,12 @@ class create_vil_feat():
     
     def music_genre(self, villager_w_astro):
         # need to create a dictionary or csv mapping the song to the generalized music genre for quiz
-        pass
+        genre_list = villager_w_astro['Favorite Song'].tolist()
+        print(len(set(genre_list)))
+        list_to_use = pd.DataFrame(set(genre_list),columns=['Favorite Song'])
+        return list_to_use.to_csv(self.path_file+"fav_song.csv")
 
 
-get_astro_sign = create_vil_feat("./python_scripts_villagers/")
-astro_added  = get_astro_sign.villager_add_astro()
+get_astro_genre_sign = create_vil_feat("./python_scripts_villagers/")
+astro_added  = get_astro_genre_sign.villager_add_astro()
+genre_added = get_astro_genre_sign.music_genre(astro_added)
