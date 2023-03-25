@@ -7,8 +7,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 class RetrievalSystem(object):
-    def __init__(self, path_file,villagers=None,num_topics =-1, 
-                 min_df=1, user_list = [], villagers_id=None
+    def __init__(self, path_file,num_topics =-1, 
+                 min_df=1, user_list = [],
                  ):
         """
         RetrievalSystem setup for lsi, creation of doc term matrix, and query vectors
@@ -17,7 +17,9 @@ class RetrievalSystem(object):
         self.villagers = pd.read_csv(self.path_file+"villagers_final.csv")
         self.user_list = user_list
         self.villagers_id= pd.read_csv(self.path_file+"villagers_id.csv")
+        
         self.villagers.drop(columns=['Unnamed: 0'],inplace=True)
+        
         villagers_lines = self.villagers[['Species','Personality','Hobby','Astrology','Genre','Style 1','Style 2','Color 1','Color 2']].copy()
         villagers_lines = villagers_lines.apply(lambda x: x.astype(str).str.lower())
         villagers_arr = villagers_lines.to_numpy()
@@ -91,9 +93,21 @@ class RetrievalSystem(object):
         return vil_1_tup, vil_2_tup
     
 
-user_sim_cl = RetrievalSystem(path_file = ("./python_scripts_villagers/"), num_topics=9,
+user_sim_cl = RetrievalSystem(path_file = ("./SIADS_699_CAPSTONE/python_scripts_villagers/"), num_topics=9,
                               user_list = ['Frog','Big Sister','Fitness','Gemini','Electronic','Active','Gorgeous','Green','Light Blue'],
                               )
 villager_1, villager_2 = user_sim_cl.retrieve_n_rank_docs()
-print(villager_1, villager_2)
 v_id1, v_id2 = user_sim_cl.get_villagers_id(vil_1 = villager_1, vil_2 = villager_2)
+print(v_id1, v_id2)
+v_name1 = v_id1[0]
+v_name2 = v_id2[0]
+
+# importing modules
+from PIL import Image
+import requests
+from io import BytesIO
+
+url = f'https://dodo.ac/np/images/thumb/6/67/{v_name1}_PC_Villager_Icon.png/100px-{v_name1}_PC_Villager_Icon.png'
+response = requests.get(url)
+img = Image.open(BytesIO(response.content))
+img.show()
