@@ -27,7 +27,6 @@ class RetrievalSystem(object):
         # create a doc-term matrix out of our doc collection
         self.vec = TfidfVectorizer(tokenizer=str.split, min_df=min_df)
         doc_term_mat = self.vec.fit_transform([" ".join(vil) for vil in villagers_arr])
-        print(doc_term_mat.shape)
         
         #lsi
         self.lsi = TruncatedSVD(n_components=num_topics,random_state=42,algorithm='randomized')
@@ -107,7 +106,7 @@ from PIL import Image
 import requests
 from io import BytesIO
 
-url = f'https://dodo.ac/np/images/thumb/6/67/{v_name1}_PC_Villager_Icon.png/100px-{v_name1}_PC_Villager_Icon.png'
+url = f'https://acnhapi.com/v1a/images/villagers/{v_id1[1]}'
 response = requests.get(url)
 img = Image.open(BytesIO(response.content))
-img.show()
+img.show(title = str(v_name1))
