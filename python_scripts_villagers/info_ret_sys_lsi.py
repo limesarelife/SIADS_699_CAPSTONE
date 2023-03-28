@@ -4,6 +4,9 @@ import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.decomposition import TruncatedSVD
 from sklearn.metrics.pairwise import cosine_similarity
+from PIL import Image
+import requests
+from io import BytesIO
 
 
 class RetrievalSystem(object):
@@ -84,29 +87,38 @@ class RetrievalSystem(object):
         Retrieve the villagers id from the villagers_id dataframe to use to bring back images for the webpage
         results.
         """
-        vil_1_id =self.villagers_id.loc[self.villagers_id['Name'] == vil_1, 'Filename'].values[0]
-        vil_2_id = self.villagers_id.loc[self.villagers_id['Name'] == vil_2, 'Filename'].values[0]
+        vil_1_id =self.villagers_id[self.villagers_id['Name'] == vil_1]['Filename'].item()
+        vil_2_id = self.villagers_id[self.villagers_id['Name'] == vil_2]['Filename'].item()
         vil_1_tup = (vil_1,vil_1_id)
         vil_2_tup = (vil_2,vil_2_id)
         
         return vil_1_tup, vil_2_tup
     
+    def return_image(self, vil_1_tup, vil_2_tup):
+        """
+        Retrieve the villagers image from the api and return the image to the webpage.
+        """
+        v_name1 = vil_1_tup[0]
+        v_name2 = vil_2_tup[0]
 
-user_sim_cl = RetrievalSystem(path_file = ("./SIADS_699_CAPSTONE/python_scripts_villagers/"), num_topics=9,
-                              user_list = ['Frog','Big Sister','Fitness','Gemini','Electronic','Active','Gorgeous','Green','Light Blue'],
+        url_vil1 = f'https://acnhapi.com/v1a/images/villagers/{vil_1_tup[1]}'
+        response_vil1 = requests.get(url_vil1)
+        img_vil1 = Image.open(BytesIO(response_vil1.content))
+        # img_vil1.show(title = str(v_name1))
+
+        url_vil2 = f'https://acnhapi.com/v1a/images/villagers/{vil_2_tup[1]}'
+        response_vil2 = requests.get(url_vil2)
+        img_vil2 = Image.open(BytesIO(response_vil2.content))
+        # img_vil2.show(title = str(v_name2))
+
+        return v_name1, img_vil1.show(title = str(v_name1)), v_name2, img_vil2.show(title = str(v_name2))
+    
+if __name__ == "__main__":
+    user_sim_cl = RetrievalSystem(path_file = ("./python_scripts_villagers/"), num_topics=9,
+                              user_list = ['Cub','Cranky','Play','Taurus','Funk','Simple','Active','Green','Light blue'],
                               )
-villager_1, villager_2 = user_sim_cl.retrieve_n_rank_docs()
-v_id1, v_id2 = user_sim_cl.get_villagers_id(vil_1 = villager_1, vil_2 = villager_2)
-print(v_id1, v_id2)
-v_name1 = v_id1[0]
-v_name2 = v_id2[0]
-
-# importing modules
-from PIL import Image
-import requests
-from io import BytesIO
-
-url = f'https://acnhapi.com/v1a/images/villagers/{v_id1[1]}'
-response = requests.get(url)
-img = Image.open(BytesIO(response.content))
-img.show(title = str(v_name1))
+    villager_1, villager_2 = user_sim_cl.retrieve_n_rank_docs()
+    v_id1, v_id2 = user_sim_cl.get_villagers_id(vil_1 = villager_1, vil_2 = villager_2)
+    v_name1, v_img1, v_name2, v_img2 = user_sim_cl.return_image(v_id1, v_id2)
+    # print(v_id1, v_id2)
+    
