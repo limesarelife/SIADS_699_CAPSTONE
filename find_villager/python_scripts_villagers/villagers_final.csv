@@ -1,0 +1,392 @@
+,Name,Species,Personality,Hobby,Astrology,Genre,Style 1,Style 2,Color 1,Color 2,Total_Google_Searches,Poll_Results,Overall_Popularity
+0,Admiral,Bird,Cranky,Nature,Aquarius,Pop,Cool,Cool,Black,Blue,2417200.0,632.0,2417832.0
+1,Agent S,Squirrel,Peppy,Fitness,Cancer,Pop,Active,Simple,Blue,Black,2664010.0,1225.0,2665235.0
+2,Agnes,Pig,Big Sister,Play,Taurus,Electronic,Simple,Elegant,Pink,White,4731450.0,2535.0,4733985.0
+3,Al,Gorilla,Lazy,Fitness,Libra,Pop,Active,Active,Red,White,1618750.0,600.0,1619350.0
+4,Alfonso,Alligator,Lazy,Play,Gemini,Folk,Simple,Simple,Red,Blue,913600.0,1230.0,914830.0
+5,Alice,Koala,Normal,Education,Leo,World,Cute,Cute,Red,Pink,2375400.0,1363.0,2376763.0
+6,Alli,Alligator,Snooty,Fashion,Scorpio,Soul,Gorgeous,Elegant,Yellow,Brown,2022150.0,253.0,2022403.0
+7,Amelia,Eagle,Snooty,Music,Scorpio,Latin,Cool,Elegant,Black,White,2262850.0,704.0,2263554.0
+8,Anabelle,Anteater,Peppy,Fashion,Aquarius,World,Cute,Simple,Green,Blue,2360050.0,1001.0,2361051.0
+9,Anchovy,Bird,Lazy,Play,Pisces,Jazz,Simple,Simple,Colorful,Orange,4103700.0,692.0,4104392.0
+10,Angus,Bull,Cranky,Fitness,Taurus,Latin,Cool,Cool,Red,Black,2050450.0,363.0,2050813.0
+11,Anicotti,Mouse,Peppy,Fashion,Pisces,Folk,Simple,Elegant,Red,Pink,1270700.0,381.0,1271081.0
+12,Ankha,Cat,Snooty,Nature,Virgo,World,Gorgeous,Simple,Colorful,Brown,7264000.0,13038.0,7277038.0
+13,Annalisa,Anteater,Normal,Nature,Aquarius,World,Elegant,Gorgeous,Red,Pink,2080050.0,586.0,2080636.0
+14,Annalise,Horse,Snooty,Fashion,Sagittarius,World,Elegant,Active,Blue,Purple,867200.0,263.0,867463.0
+15,Antonio,Anteater,Jock,Fitness,Libra,Jazz,Simple,Simple,Light blue,Blue,524450.0,1635.0,526085.0
+16,Apollo,Eagle,Cranky,Music,Cancer,Rock,Cool,Simple,Black,Black,513600.0,5491.0,519091.0
+17,Apple,Hamster,Peppy,Play,Libra,Children's Music,Cute,Simple,Colorful,Red,1335850.0,5099.0,1340949.0
+18,Astrid,Kangaroo,Snooty,Music,Virgo,Jazz,Cool,Active,Black,Colorful,591750.0,258.0,592008.0
+19,Audie,Wolf,Peppy,Fitness,Virgo,Latin,Cute,Active,Green,White,4911350.0,11842.0,4923192.0
+20,Aurora,Penguin,Normal,Education,Aquarius,Children's Music,Cute,Elegant,Pink,Red,2836400.0,3226.0,2839626.0
+21,Ava,Chicken,Normal,Music,Taurus,Rhythm & Blues,Elegant,Cute,Red,Gray,2589950.0,394.0,2590344.0
+22,Avery,Eagle,Cranky,Music,Pisces,Latin,Simple,Gorgeous,Orange,Brown,1565150.0,518.0,1565668.0
+23,Axel,Elephant,Jock,Fitness,Aries,Country,Active,Simple,Green,White,1609700.0,655.0,1610355.0
+24,Baabara,Sheep,Snooty,Fashion,Aries,Funk,Gorgeous,Elegant,Purple,Blue,1218200.0,305.0,1218505.0
+25,Bam,Deer,Jock,Play,Scorpio,Blues,Active,Simple,Green,Brown,955900.0,2733.0,958633.0
+26,Bangle,Tiger,Peppy,Fashion,Virgo,Soul,Gorgeous,Cute,Yellow,Green,1665900.0,1079.0,1666979.0
+27,Barold,Cub,Lazy,Play,Pisces,World,Simple,Cool,Yellow,Black,2580750.0,1347.0,2582097.0
+28,Bea,Dog,Normal,Nature,Libra,Jazz,Simple,Cool,Light blue,Green,1701100.0,1359.0,1702459.0
+29,Beardo,Bear,Smug,Education,Libra,Latin,Elegant,Elegant,Brown,Blue,500350.0,748.0,501098.0
+30,Beau,Deer,Lazy,Nature,Aries,Children's Music,Simple,Cute,Beige,Orange,517650.0,11411.0,529061.0
+31,Becky,Chicken,Snooty,Music,Sagittarius,Classical,Gorgeous,Elegant,Purple,Pink,1766550.0,199.0,1766749.0
+32,Bella,Mouse,Peppy,Music,Capricorn,Rock,Cool,Active,Black,Purple,962250.0,749.0,962999.0
+33,Benedict,Chicken,Lazy,Play,Libra,Children's Music,Simple,Simple,Blue,Purple,1875950.0,373.0,1876323.0
+34,Benjamin,Dog,Lazy,Nature,Leo,Folk,Simple,Simple,Red,White,446550.0,543.0,447093.0
+35,Bertha,Hippo,Normal,Education,Taurus,Rock,Cute,Elegant,Pink,White,2139100.0,667.0,2139767.0
+36,Bettina,Mouse,Normal,Education,Gemini,World,Simple,Elegant,White,Red,1922750.0,293.0,1923043.0
+37,Bianca,Tiger,Peppy,Play,Sagittarius,Electronic,Cute,Cute,Pink,Orange,1470050.0,2006.0,1472056.0
+38,Biff,Hippo,Jock,Fitness,Aries,Funk,Gorgeous,Active,Black,Blue,3925600.0,931.0,3926531.0
+39,Big Top,Elephant,Lazy,Play,Libra,Pop,Simple,Active,Green,Green,2963650.0,385.0,2964035.0
+40,Bill,Duck,Jock,Play,Aquarius,Folk,Active,Active,Blue,Purple,2699500.0,2362.0,2701862.0
+41,Billy,Goat,Jock,Play,Aries,World,Simple,Active,Blue,Purple,1008200.0,760.0,1008960.0
+42,Biskit,Dog,Lazy,Play,Taurus,World,Gorgeous,Simple,Purple,Colorful,739800.0,1598.0,741398.0
+43,Bitty,Hippo,Snooty,Education,Libra,Disco,Cute,Elegant,Pink,Orange,1841600.0,162.0,1841762.0
+44,Blaire,Squirrel,Snooty,Fashion,Cancer,Latin,Gorgeous,Elegant,Orange,Brown,174500.0,1121.0,175621.0
+45,Blanche,Ostrich,Snooty,Nature,Sagittarius,World,Elegant,Gorgeous,Black,Brown,777950.0,923.0,778873.0
+46,Bluebear,Cub,Peppy,Fashion,Cancer,Blues,Cute,Simple,White,Blue,1454250.0,4265.0,1458515.0
+47,Bob,Cat,Lazy,Play,Capricorn,Folk,Simple,Cute,Colorful,Red,910950.0,10333.0,921283.0
+48,Bonbon,Rabbit,Peppy,Play,Pisces,Pop,Cute,Elegant,Light blue,Yellow,2116950.0,532.0,2117482.0
+49,Bones,Dog,Lazy,Play,Leo,Classical,Simple,Cute,Beige,Brown,3039200.0,2164.0,3041364.0
+50,Boomer,Penguin,Lazy,Fitness,Aquarius,Folk,Simple,Cool,Brown,Beige,939470.0,1026.0,940496.0
+51,Boone,Gorilla,Jock,Fitness,Virgo,Children's Music,Elegant,Cool,Colorful,Red,1247200.0,489.0,1247689.0
+52,Boots,Alligator,Jock,Play,Leo,Children's Music,Gorgeous,Active,Colorful,Purple,1785100.0,543.0,1785643.0
+53,Boris,Pig,Cranky,Nature,Scorpio,World,Cool,Gorgeous,Purple,Black,525490.0,294.0,525784.0
+54,Boyd,Gorilla,Cranky,Fitness,Libra,Jazz,Simple,Cool,Red,Black,1508500.0,160.0,1508660.0
+55,Bree,Mouse,Snooty,Fashion,Cancer,Latin,Elegant,Gorgeous,Black,Blue,1607750.0,499.0,1608249.0
+56,Broccolo,Mouse,Lazy,Play,Cancer,Children's Music,Simple,Cute,Colorful,Yellow,3634400.0,946.0,3635346.0
+57,Broffina,Chicken,Snooty,Music,Scorpio,Latin,Gorgeous,Elegant,Black,Red,845350.0,243.0,845593.0
+58,Bruce,Deer,Cranky,Nature,Gemini,Blues,Cool,Simple,Black,Red,2371600.0,1075.0,2372675.0
+59,Bubbles,Hippo,Peppy,Fashion,Virgo,Pop,Active,Cute,Purple,Pink,6042620.0,610.0,6043230.0
+60,Buck,Horse,Jock,Fitness,Aries,Reggae,Active,Simple,Gray,Brown,587460.0,590.0,588050.0
+61,Bud,Lion,Jock,Fitness,Leo,World,Active,Simple,Green,Yellow,490.0,310.0,800.0
+62,Bunnie,Rabbit,Peppy,Fashion,Taurus,Folk,Cute,Cute,Green,Pink,1027750.0,1858.0,1029608.0
+63,Butch,Dog,Cranky,Music,Scorpio,Country,Cool,Simple,Blue,Gray,565800.0,935.0,566735.0
+64,Buzz,Eagle,Cranky,Nature,Sagittarius,Jazz,Simple,Active,Yellow,Red,550450.0,230.0,550680.0
+65,Cally,Squirrel,Normal,Nature,Virgo,Pop,Cute,Elegant,Red,Green,668250.0,395.0,668645.0
+66,Camofrog,Frog,Cranky,Music,Gemini,World,Cool,Active,Blue,White,1995750.0,629.0,1996379.0
+67,Canberra,Koala,Big Sister,Play,Taurus,Latin,Active,Cool,Green,Light blue,848400.0,1011.0,849411.0
+68,Candi,Mouse,Peppy,Play,Aries,Folk,Simple,Cute,Light blue,Yellow,2475000.0,213.0,2475213.0
+69,Carmen,Rabbit,Peppy,Fashion,Capricorn,Pop,Elegant,Cute,Green,Beige,907230.0,964.0,908194.0
+70,Caroline,Squirrel,Normal,Music,Cancer,Folk,Cute,Gorgeous,Colorful,White,717840.0,737.0,718577.0
+71,Carrie,Kangaroo,Normal,Nature,Sagittarius,Children's Music,Cute,Cute,Red,Colorful,569400.0,291.0,569691.0
+72,Cashmere,Sheep,Snooty,Fashion,Aries,Folk,Gorgeous,Elegant,Purple,Beige,1073200.0,238.0,1073438.0
+73,Celia,Eagle,Normal,Nature,Aries,Soul,Elegant,Cute,Pink,Green,1363250.0,950.0,1364200.0
+74,Cesar,Gorilla,Cranky,Fitness,Virgo,Funk,Cool,Elegant,Blue,Light blue,1715350.0,253.0,1715603.0
+75,Chadder,Mouse,Smug,Fitness,Sagittarius,Soul,Elegant,Gorgeous,Black,Gray,2026350.0,847.0,2027197.0
+76,Charlise,Bear,Big Sister,Fitness,Aries,Folk,Active,Cute,Red,Orange,1908450.0,275.0,1908725.0
+77,Cheri,Cub,Peppy,Fashion,Pisces,Disco,Simple,Cute,Yellow,Light blue,1556550.0,1565.0,1558115.0
+78,Cherry,Dog,Big Sister,Music,Taurus,Electronic,Cool,Elegant,Black,Purple,512300.0,6095.0,518395.0
+79,Chester,Cub,Lazy,Play,Leo,Folk,Simple,Simple,Yellow,Green,1850100.0,748.0,1850848.0
+80,Chevre,Goat,Normal,Education,Pisces,Classical,Cute,Elegant,Red,Pink,3017100.0,2745.0,3019845.0
+81,Chief,Wolf,Cranky,Music,Sagittarius,Rock,Cool,Simple,White,Gray,814250.0,1530.0,815780.0
+82,Chops,Pig,Smug,Education,Libra,Blues,Gorgeous,Elegant,Red,Green,1565550.0,202.0,1565752.0
+83,Chow,Bear,Cranky,Fitness,Cancer,Folk,Cool,Gorgeous,Black,White,2815250.0,291.0,2815541.0
+84,Chrissy,Rabbit,Peppy,Fashion,Virgo,Pop,Cute,Cute,Pink,White,1621450.0,2262.0,1623712.0
+85,Claude,Rabbit,Lazy,Nature,Sagittarius,Folk,Simple,Simple,Black,Colorful,2604100.0,304.0,2604404.0
+86,Claudia,Tiger,Snooty,Music,Sagittarius,Electronic,Gorgeous,Elegant,Purple,White,2038600.0,280.0,2038880.0
+87,Clay,Hamster,Lazy,Nature,Libra,World,Elegant,Simple,Beige,Brown,19218150.0,3425.0,19221575.0
+88,Cleo,Horse,Snooty,Education,Aquarius,Rhythm & Blues,Cute,Elegant,Light blue,White,53600.0,357.0,53957.0
+89,Clyde,Horse,Lazy,Play,Taurus,Folk,Simple,Cute,Green,White,2881050.0,197.0,2881247.0
+90,Coach,Bull,Jock,Fitness,Taurus,Folk,Active,Active,Blue,Red,1878600.0,455.0,1879055.0
+91,Cobb,Pig,Jock,Education,Libra,Folk,Simple,Active,White,Blue,1929450.0,289.0,1929739.0
+92,Coco,Rabbit,Normal,Education,Pisces,World,Simple,Cute,Beige,Green,1970550.0,10163.0,1980713.0
+93,Cole,Rabbit,Lazy,Nature,Leo,World,Simple,Cute,Orange,Colorful,3091100.0,702.0,3091802.0
+94,Colton,Horse,Smug,Nature,Gemini,Classical,Gorgeous,Elegant,Blue,Red,1044990.0,681.0,1045671.0
+95,Cookie,Dog,Peppy,Fashion,Gemini,Pop,Cute,Cute,Green,Light blue,3378250.0,4087.0,3382337.0
+96,Cousteau,Frog,Jock,Fitness,Sagittarius,Folk,Elegant,Gorgeous,Green,Red,1951750.0,444.0,1952194.0
+97,Cranston,Ostrich,Lazy,Nature,Libra,World,Simple,Cool,Beige,Brown,2915000.0,1268.0,2916268.0
+98,Croque,Frog,Cranky,Nature,Cancer,Folk,Elegant,Cool,Red,Orange,674600.0,229.0,674829.0
+99,Cube,Penguin,Lazy,Play,Aquarius,Folk,Simple,Cute,Yellow,Colorful,0.0,1378.0,1378.0
+100,Curlos,Sheep,Smug,Nature,Taurus,Latin,Active,Gorgeous,Red,Green,1443500.0,423.0,1443923.0
+101,Curly,Pig,Jock,Fitness,Leo,Reggae,Simple,Active,Yellow,Colorful,2242500.0,186.0,2242686.0
+102,Curt,Bear,Cranky,Nature,Cancer,World,Cool,Cool,Blue,White,915550.0,399.0,915949.0
+103,Cyd,Elephant,Cranky,Music,Gemini,Rock,Cool,Active,Black,Yellow,1987850.0,806.0,1988656.0
+104,Cyrano,Anteater,Cranky,Education,Pisces,Blues,Cool,Active,Yellow,Beige,1768850.0,276.0,1769126.0
+105,Daisy,Dog,Normal,Education,Scorpio,Folk,Simple,Cute,Colorful,Blue,3728400.0,2357.0,3730757.0
+106,Deena,Duck,Normal,Education,Cancer,Folk,Simple,Cute,Colorful,Blue,1972950.0,448.0,1973398.0
+107,Deirdre,Deer,Big Sister,Play,Taurus,Latin,Simple,Simple,Orange,Orange,2593950.0,1709.0,2595659.0
+108,Del,Alligator,Cranky,Fitness,Gemini,Folk,Cool,Simple,Blue,White,1086200.0,448.0,1086648.0
+109,Deli,Monkey,Lazy,Nature,Gemini,Classical,Gorgeous,Elegant,Purple,Brown,2969000.0,774.0,2969774.0
+110,Derwin,Duck,Lazy,Play,Gemini,Pop,Simple,Elegant,Yellow,Beige,611500.0,447.0,611947.0
+111,Diana,Deer,Snooty,Education,Capricorn,Folk,Elegant,Gorgeous,Purple,Pink,1342250.0,8044.0,1350294.0
+112,Diva,Frog,Big Sister,Fitness,Libra,World,Gorgeous,Elegant,Purple,Light blue,898900.0,724.0,899624.0
+113,Dizzy,Elephant,Lazy,Play,Cancer,Rock,Simple,Simple,Yellow,Blue,1372750.0,1318.0,1374068.0
+114,Dobie,Wolf,Cranky,Nature,Aquarius,Jazz,Simple,Cool,Brown,Beige,3403300.0,3234.0,3406534.0
+115,Doc,Rabbit,Lazy,Education,Pisces,Folk,Simple,Elegant,Gray,Beige,1005790.0,447.0,1006237.0
+116,Dom,Sheep,Jock,Play,Pisces,Country,Active,Cute,Red,Colorful,4458200.0,10775.0,4468975.0
+117,Dora,Mouse,Normal,Education,Aquarius,World,Simple,Elegant,Blue,Light blue,2062950.0,373.0,2063323.0
+118,Dotty,Rabbit,Peppy,Fashion,Pisces,Jazz,Simple,Cute,Blue,Black,1621650.0,1370.0,1623020.0
+119,Drago,Alligator,Lazy,Nature,Aquarius,Folk,Elegant,Gorgeous,Orange,Red,3142950.0,1529.0,3144479.0
+120,Drake,Duck,Lazy,Play,Cancer,Blues,Cool,Simple,Brown,Red,1284720.0,533.0,1285253.0
+121,Drift,Frog,Jock,Fitness,Libra,Rock,Simple,Active,Orange,Red,6695950.0,525.0,6696475.0
+122,Ed,Horse,Smug,Nature,Virgo,Electronic,Gorgeous,Elegant,Black,Gray,1236650.0,321.0,1236971.0
+123,Egbert,Chicken,Lazy,Play,Libra,World,Simple,Simple,Beige,Brown,1698750.0,617.0,1699367.0
+124,Elise,Monkey,Snooty,Fashion,Aries,Latin,Elegant,Gorgeous,Purple,Red,1618200.0,214.0,1618414.0
+125,Ellie,Elephant,Normal,Nature,Taurus,Electronic,Simple,Cute,Gray,Pink,2867350.0,1506.0,2868856.0
+126,Elmer,Horse,Lazy,Play,Libra,Country,Simple,Cool,Blue,White,2127850.0,366.0,2128216.0
+127,Eloise,Elephant,Snooty,Fashion,Sagittarius,Soul,Elegant,Simple,Green,Orange,687370.0,440.0,687810.0
+128,Elvis,Lion,Cranky,Education,Leo,World,Gorgeous,Elegant,Red,Black,2779850.0,627.0,2780477.0
+129,Erik,Deer,Lazy,Nature,Leo,Jazz,Simple,Simple,Beige,Red,3156450.0,10794.0,3167244.0
+130,Eugene,Koala,Smug,Music,Scorpio,Jazz,Cool,Gorgeous,Black,Gray,814300.0,1279.0,815579.0
+131,Eunice,Sheep,Normal,Fashion,Aries,Disco,Simple,Elegant,Beige,Orange,837000.0,671.0,837671.0
+132,Fang,Wolf,Cranky,Education,Sagittarius,Folk,Simple,Cool,White,Light blue,1074750.0,4130.0,1078880.0
+133,Fauna,Deer,Normal,Nature,Aries,Pop,Simple,Cute,Beige,White,2421950.0,11628.0,2433578.0
+134,Felicity,Cat,Peppy,Fashion,Aries,Pop,Cute,Cute,Yellow,Orange,2407950.0,1200.0,2409150.0
+135,Filbert,Squirrel,Lazy,Nature,Gemini,Children's Music,Simple,Cute,Blue,White,1809600.0,4504.0,1814104.0
+136,Flip,Monkey,Jock,Music,Scorpio,World,Active,Simple,Blue,Yellow,1379950.0,496.0,1380446.0
+137,Flo,Penguin,Big Sister,Music,Virgo,Electronic,Cool,Gorgeous,Red,Purple,3057350.0,961.0,3058311.0
+138,Flora,Ostrich,Peppy,Play,Aquarius,Latin,Cute,Active,Colorful,Pink,2782050.0,4298.0,2786348.0
+139,Flurry,Hamster,Normal,Nature,Aquarius,Electronic,Elegant,Cute,Red,Pink,1942600.0,3288.0,1945888.0
+140,Francine,Rabbit,Snooty,Fashion,Aquarius,Funk,Elegant,Gorgeous,Blue,Black,2630200.0,1499.0,2631699.0
+141,Frank,Eagle,Cranky,Education,Leo,World,Gorgeous,Cool,Brown,Yellow,1786950.0,253.0,1787203.0
+142,Freckles,Duck,Peppy,Fashion,Pisces,World,Simple,Cute,Green,Colorful,1500350.0,879.0,1501229.0
+143,Freya,Wolf,Snooty,Fashion,Sagittarius,World,Elegant,Cool,Green,Blue,2888900.0,1367.0,2890267.0
+144,Friga,Penguin,Snooty,Fashion,Libra,Folk,Elegant,Gorgeous,Pink,Black,2042000.0,276.0,2042276.0
+145,Frita,Sheep,Big Sister,Music,Cancer,Rock,Active,Cute,Yellow,Red,934650.0,924.0,935574.0
+146,Frobert,Frog,Jock,Fitness,Aquarius,Jazz,Active,Simple,Blue,Colorful,2364600.0,377.0,2364977.0
+147,Fuchsia,Deer,Big Sister,Music,Virgo,Rock,Cool,Cool,Pink,Pink,2385250.0,1730.0,2386980.0
+148,Gabi,Rabbit,Peppy,Fashion,Sagittarius,Folk,Cute,Gorgeous,Brown,Red,0.0,337.0,337.0
+149,Gala,Pig,Normal,Education,Pisces,World,Cute,Elegant,Pink,White,3805350.0,1093.0,3806443.0
+150,Gaston,Rabbit,Cranky,Education,Scorpio,World,Simple,Gorgeous,Brown,Orange,1062600.0,529.0,1063129.0
+151,Gayle,Alligator,Normal,Nature,Taurus,Pop,Cute,Cute,Pink,White,1805250.0,1884.0,1807134.0
+152,Genji,Rabbit,Jock,Fitness,Aquarius,World,Elegant,Simple,Green,Purple,2902650.0,3154.0,2905804.0
+153,Gigi,Frog,Snooty,Fashion,Leo,Funk,Gorgeous,Elegant,Black,White,1945950.0,227.0,1946177.0
+154,Gladys,Ostrich,Normal,Education,Capricorn,Folk,Elegant,Cute,Green,Pink,648750.0,826.0,649576.0
+155,Gloria,Duck,Snooty,Fashion,Leo,World,Gorgeous,Elegant,Black,Gray,1914000.0,227.0,1914227.0
+156,Goldie,Dog,Normal,Nature,Capricorn,Latin,Simple,Cute,Yellow,Orange,0.0,4693.0,4693.0
+157,Gonzo,Koala,Cranky,Nature,Libra,Rock,Simple,Cool,Black,Green,3879020.0,701.0,3879721.0
+158,Goose,Chicken,Jock,Fitness,Libra,Country,Simple,Active,Blue,White,501650.0,570.0,502220.0
+159,Graham,Hamster,Smug,Education,Gemini,Pop,Simple,Cool,Green,Orange,1903850.0,570.0,1904420.0
+160,Greta,Mouse,Snooty,Education,Virgo,World,Elegant,Simple,Pink,Purple,2440800.0,185.0,2440985.0
+161,Grizzly,Bear,Cranky,Education,Leo,Latin,Cool,Simple,Red,Black,772100.0,532.0,772632.0
+162,Groucho,Bear,Cranky,Music,Scorpio,Rock,Cool,Simple,Black,Gray,1818400.0,394.0,1818794.0
+163,Gruff,Goat,Cranky,Music,Virgo,Rock,Cool,Gorgeous,Purple,Black,2008700.0,299.0,2008999.0
+164,Gwen,Penguin,Snooty,Fashion,Aquarius,Jazz,Gorgeous,Elegant,Green,White,437860.0,206.0,438066.0
+165,Hamlet,Hamster,Jock,Play,Gemini,Reggae,Simple,Active,Purple,Blue,1110350.0,1676.0,1112026.0
+166,Hamphrey,Hamster,Cranky,Nature,Pisces,World,Cool,Simple,Gray,Beige,1886900.0,577.0,1887477.0
+167,Hans,Gorilla,Smug,Fitness,Sagittarius,Classical,Elegant,Gorgeous,Gray,Blue,1502750.0,429.0,1503179.0
+168,Harry,Hippo,Cranky,Education,Capricorn,World,Cool,Simple,Green,Orange,1333720.0,175.0,1333895.0
+169,Hazel,Squirrel,Big Sister,Play,Virgo,Electronic,Active,Cute,Red,Yellow,2149950.0,1604.0,2151554.0
+170,Henry,Frog,Smug,Music,Virgo,Soul,Cool,Simple,Light blue,Blue,1637250.0,1588.0,1638838.0
+171,Hippeux,Hippo,Smug,Education,Libra,Classical,Elegant,Gorgeous,Brown,Green,2365000.0,383.0,2365383.0
+172,Hopkins,Rabbit,Lazy,Nature,Pisces,Folk,Simple,Active,Blue,Yellow,838760.0,638.0,839398.0
+173,Hopper,Penguin,Cranky,Music,Aries,World,Cool,Simple,Yellow,Red,1466550.0,607.0,1467157.0
+174,Hornsby,Rhino,Lazy,Nature,Pisces,Blues,Simple,Simple,Green,Brown,1507300.0,2216.0,1509516.0
+175,Huck,Frog,Smug,Fitness,Cancer,Jazz,Simple,Cool,Green,Yellow,2036750.0,332.0,2037082.0
+176,Hugh,Pig,Lazy,Play,Capricorn,Reggae,Simple,Active,Beige,Yellow,2335550.0,567.0,2336117.0
+177,Iggly,Penguin,Jock,Fitness,Scorpio,Children's Music,Active,Simple,Red,Blue,2276100.0,518.0,2276618.0
+178,Ike,Bear,Cranky,Nature,Taurus,Rock,Cool,Cool,Green,Blue,2314800.0,250.0,2315050.0
+179,Jacob,Bird,Lazy,Nature,Virgo,World,Simple,Simple,Green,Red,2305350.0,482.0,2305832.0
+180,Jacques,Bird,Smug,Music,Cancer,Electronic,Cool,Simple,Green,Black,2210400.0,654.0,2211054.0
+181,Jambette,Frog,Normal,Fashion,Scorpio,Funk,Cool,Cool,Brown,Brown,1846400.0,345.0,1846745.0
+182,Jay,Bird,Jock,Fitness,Cancer,Country,Active,Active,Blue,Light blue,295590.0,425.0,296015.0
+183,Jeremiah,Frog,Lazy,Play,Cancer,Electronic,Simple,Simple,Orange,Yellow,1942350.0,1192.0,1943542.0
+184,Jitters,Bird,Jock,Fitness,Aquarius,Folk,Active,Active,Yellow,Orange,809650.0,532.0,810182.0
+185,Joey,Duck,Lazy,Play,Capricorn,World,Simple,Simple,Green,Blue,870100.0,1118.0,871218.0
+186,Judy,Cub,Snooty,Music,Pisces,Children's Music,Cute,Elegant,Pink,White,4686500.0,14741.0,4701241.0
+187,Julia,Ostrich,Snooty,Education,Leo,Classical,Elegant,Gorgeous,Purple,Red,589850.0,1379.0,591229.0
+188,Julian,Horse,Smug,Music,Pisces,Electronic,Gorgeous,Cool,Purple,Blue,4472800.0,5561.0,4478361.0
+189,June,Cub,Normal,Nature,Gemini,Latin,Cute,Simple,White,Red,0.0,1684.0,1684.0
+190,Kabuki,Cat,Cranky,Music,Sagittarius,World,Simple,Simple,Purple,Red,4761450.0,3012.0,4764462.0
+191,Katt,Cat,Big Sister,Music,Taurus,Disco,Cool,Cool,Purple,Black,2301050.0,2224.0,2303274.0
+192,Keaton,Eagle,Smug,Music,Gemini,Jazz,Gorgeous,Cool,Blue,White,1988400.0,448.0,1988848.0
+193,Ken,Chicken,Smug,Education,Capricorn,World,Cool,Simple,Purple,Blue,567600.0,593.0,568193.0
+194,Ketchup,Duck,Peppy,Play,Leo,Folk,Cute,Cute,Light blue,White,2218350.0,7354.0,2225704.0
+195,Kevin,Pig,Jock,Play,Taurus,Rock,Active,Simple,Black,Red,390630.0,356.0,390986.0
+196,Kid Cat,Cat,Jock,Fitness,Leo,Pop,Active,Simple,Red,Red,109950.0,2669.0,112619.0
+197,Kidd,Goat,Smug,Education,Cancer,Latin,Elegant,Cool,Gray,White,123930.0,1337.0,125267.0
+198,Kiki,Cat,Normal,Education,Libra,Blues,Simple,Simple,Brown,Beige,1176550.0,3688.0,1180238.0
+199,Kitt,Kangaroo,Normal,Education,Libra,Children's Music,Elegant,Simple,Purple,Red,813800.0,412.0,814212.0
+200,Kitty,Cat,Snooty,Fashion,Aquarius,Classical,Elegant,Gorgeous,Green,Gray,3888800.0,334.0,3889134.0
+201,Klaus,Bear,Smug,Education,Aries,Classical,Simple,Simple,Gray,White,1427300.0,504.0,1427804.0
+202,Knox,Chicken,Cranky,Education,Sagittarius,Classical,Elegant,Gorgeous,Brown,Red,773250.0,376.0,773626.0
+203,Kody,Cub,Jock,Fitness,Libra,Reggae,Active,Simple,Colorful,White,414450.0,330.0,414780.0
+204,Kyle,Wolf,Smug,Music,Sagittarius,Rock,Gorgeous,Cool,Black,White,684450.0,2184.0,686634.0
+205,Leonardo,Tiger,Jock,Fitness,Taurus,Rock,Active,Gorgeous,Red,Blue,3097850.0,348.0,3098198.0
+206,Leopold,Lion,Smug,Education,Leo,Folk,Elegant,Gorgeous,Purple,Green,2538750.0,407.0,2539157.0
+207,Lily,Frog,Normal,Education,Aquarius,Folk,Cute,Simple,White,Yellow,0.0,3665.0,3665.0
+208,Limberg,Mouse,Cranky,Education,Libra,Folk,Simple,Cool,Green,Blue,80.0,179.0,259.0
+209,Lionel,Lion,Smug,Music,Leo,Blues,Gorgeous,Active,Green,Gray,925800.0,502.0,926302.0
+210,Lobo,Wolf,Cranky,Education,Scorpio,Rock,Cool,Active,Black,Beige,2017100.0,1097.0,2018197.0
+211,Lolly,Cat,Normal,Music,Aries,Folk,Simple,Simple,Gray,Pink,2231450.0,9243.0,2240693.0
+212,Lopez,Deer,Smug,Education,Leo,Jazz,Gorgeous,Gorgeous,Gray,Gray,595300.0,1334.0,596634.0
+213,Louie,Gorilla,Jock,Fitness,Aries,Rhythm & Blues,Active,Simple,Gray,Red,366750.0,244.0,366994.0
+214,Lucha,Bird,Smug,Fitness,Sagittarius,Country,Active,Cool,Black,Gray,710470.0,308.0,710778.0
+215,Lucky,Dog,Lazy,Play,Scorpio,World,Simple,Simple,Beige,White,1980350.0,9208.0,1989558.0
+216,Lucy,Pig,Normal,Music,Gemini,Classical,Cute,Elegant,Pink,Red,1362860.0,399.0,1363259.0
+217,Lyman,Koala,Jock,Play,Libra,World,Simple,Active,Light blue,Yellow,0.0,1420.0,1420.0
+218,Mac,Dog,Jock,Fitness,Scorpio,Reggae,Active,Cool,Red,Black,1182800.0,714.0,1183514.0
+219,Maddie,Dog,Peppy,Play,Capricorn,Pop,Simple,Cute,Purple,Pink,3794550.0,1051.0,3795601.0
+220,Maelle,Duck,Snooty,Fashion,Aries,World,Cool,Simple,Pink,White,1353250.0,209.0,1353459.0
+221,Maggie,Pig,Normal,Nature,Virgo,Jazz,Cute,Elegant,Green,Yellow,903050.0,323.0,903373.0
+222,Mallary,Duck,Snooty,Fashion,Scorpio,Latin,Cool,Gorgeous,Blue,White,2090150.0,193.0,2090343.0
+223,Maple,Cub,Normal,Education,Gemini,Folk,Simple,Cute,Beige,Green,1764100.0,8594.0,1772694.0
+224,Marcel,Dog,Lazy,Play,Capricorn,World,Simple,Cool,Green,Blue,1843600.0,740.0,1844340.0
+225,Marcie,Kangaroo,Normal,Nature,Gemini,Classical,Cute,Elegant,Pink,Beige,1894150.0,422.0,1894572.0
+226,Margie,Elephant,Normal,Education,Aquarius,World,Elegant,Cute,Pink,Red,1716200.0,854.0,1717054.0
+227,Marina,Octopus,Normal,Music,Cancer,Soul,Cute,Cute,Pink,Red,3050500.0,13129.0,3063629.0
+228,Marshal,Squirrel,Smug,Music,Libra,Latin,Elegant,Cool,Light blue,Blue,1136850.0,29787.0,1166637.0
+229,Mathilda,Kangaroo,Snooty,Fitness,Scorpio,Classical,Cool,Gorgeous,White,Red,2065700.0,396.0,2066096.0
+230,Megan,Bear,Normal,Nature,Pisces,Folk,Cute,Simple,Yellow,Light blue,2785250.0,1085.0,2786335.0
+231,Melba,Koala,Normal,Education,Aries,Pop,Cute,Cute,White,Green,1840250.0,3571.0,1843821.0
+232,Merengue,Rhino,Normal,Nature,Pisces,Electronic,Cute,Simple,White,Red,2418400.0,10971.0,2429371.0
+233,Merry,Cat,Peppy,Fashion,Cancer,Folk,Cute,Cute,Pink,Light blue,1512650.0,10131.0,1522781.0
+234,Midge,Bird,Normal,Education,Pisces,Pop,Cute,Simple,Pink,Pink,1738200.0,675.0,1738875.0
+235,Mint,Squirrel,Snooty,Fashion,Taurus,Soul,Gorgeous,Cute,Pink,Purple,0.0,915.0,915.0
+236,Mira,Rabbit,Big Sister,Fitness,Cancer,Pop,Active,Cool,Red,Yellow,1901200.0,1076.0,1902276.0
+237,Miranda,Duck,Snooty,Fashion,Taurus,Classical,Elegant,Gorgeous,Blue,Purple,3017750.0,235.0,3017985.0
+238,Mitzi,Cat,Normal,Education,Libra,Rhythm & Blues,Simple,Simple,Brown,Beige,2101100.0,1650.0,2102750.0
+239,Moe,Cat,Lazy,Play,Capricorn,Rock,Active,Simple,Black,Gray,1082800.0,786.0,1083586.0
+240,Molly,Duck,Normal,Nature,Pisces,Electronic,Cute,Simple,Yellow,Pink,1379250.0,9204.0,1388454.0
+241,Monique,Cat,Snooty,Fashion,Libra,Funk,Gorgeous,Elegant,Purple,Pink,606090.0,345.0,606435.0
+242,Monty,Monkey,Cranky,Education,Sagittarius,Jazz,Cool,Cool,Yellow,Gray,2149900.0,216.0,2150116.0
+243,Moose,Mouse,Jock,Fitness,Virgo,Rock,Cool,Gorgeous,Purple,Red,1060700.0,191.0,1060891.0
+244,Mott,Lion,Jock,Fitness,Cancer,Rhythm & Blues,Active,Elegant,Blue,Green,1930950.0,210.0,1931160.0
+245,Muffy,Sheep,Big Sister,Music,Aquarius,Classical,Gorgeous,Elegant,Black,Purple,1954750.0,2295.0,1957045.0
+246,Murphy,Cub,Cranky,Education,Capricorn,World,Simple,Cool,Blue,White,1253200.0,633.0,1253833.0
+247,Nan,Goat,Normal,Nature,Virgo,Classical,Simple,Elegant,Orange,Yellow,2003350.0,1171.0,2004521.0
+248,Nana,Monkey,Normal,Education,Virgo,Electronic,Cute,Cute,Pink,White,935300.0,829.0,936129.0
+249,Naomi,Cow,Snooty,Fashion,Pisces,Latin,Elegant,Gorgeous,Colorful,Purple,2089850.0,237.0,2090087.0
+250,Nate,Bear,Lazy,Play,Leo,Folk,Simple,Simple,White,Green,2224700.0,542.0,2225242.0
+251,Nibbles,Squirrel,Peppy,Fashion,Cancer,Disco,Cute,Active,Red,Yellow,1154250.0,615.0,1154865.0
+252,Norma,Cow,Normal,Nature,Virgo,Children's Music,Cute,Simple,White,Light blue,2523900.0,762.0,2524662.0
+253,O'Hare,Rabbit,Smug,Nature,Leo,Latin,Active,Cool,Blue,Light blue,0.0,847.0,847.0
+254,Octavian,Octopus,Cranky,Play,Virgo,Electronic,Cool,Simple,Black,White,2833900.0,4434.0,2838334.0
+255,Olaf,Anteater,Smug,Education,Taurus,Latin,Elegant,Gorgeous,Red,Black,1943800.0,423.0,1944223.0
+256,Olive,Cub,Normal,Nature,Cancer,Folk,Simple,Simple,Brown,Yellow,12937100.0,751.0,12937851.0
+257,Olivia,Cat,Snooty,Music,Aquarius,Classical,Cool,Elegant,White,Black,1413350.0,1442.0,1414792.0
+258,Opal,Elephant,Snooty,Fashion,Aquarius,Funk,Elegant,Cool,Black,Orange,1447110.0,438.0,1447548.0
+259,Ozzie,Koala,Lazy,Play,Taurus,Folk,Simple,Cute,Yellow,Orange,1651150.0,1659.0,1652809.0
+260,Pancetti,Pig,Snooty,Music,Scorpio,Funk,Cute,Gorgeous,Red,Yellow,1954750.0,194.0,1954944.0
+261,Pango,Anteater,Peppy,Fashion,Scorpio,World,Elegant,Cool,Orange,Purple,2651310.0,437.0,2651747.0
+262,Paolo,Elephant,Lazy,Nature,Taurus,Jazz,Simple,Elegant,Gray,Light blue,2196800.0,362.0,2197162.0
+263,Papi,Horse,Lazy,Nature,Capricorn,Electronic,Simple,Simple,Orange,Light blue,620650.0,1231.0,621881.0
+264,Pashmina,Goat,Big Sister,Music,Capricorn,Disco,Cool,Elegant,Red,Colorful,4165000.0,2954.0,4167954.0
+265,Pate,Duck,Peppy,Fashion,Pisces,Soul,Simple,Cute,Yellow,White,1546600.0,622.0,1547222.0
+266,Patty,Cow,Peppy,Fashion,Taurus,Latin,Simple,Cute,Orange,Red,2597650.0,605.0,2598255.0
+267,Paula,Bear,Big Sister,Fitness,Aries,Disco,Cute,Active,Orange,Green,581790.0,216.0,582006.0
+268,Peaches,Horse,Normal,Education,Sagittarius,Folk,Cute,Simple,Colorful,Light blue,1691860.0,250.0,1692110.0
+269,Peanut,Squirrel,Peppy,Fashion,Gemini,Folk,Cute,Cute,Red,Colorful,957550.0,1766.0,959316.0
+270,Pecan,Squirrel,Snooty,Fashion,Virgo,Rhythm & Blues,Elegant,Gorgeous,Purple,Beige,2142050.0,745.0,2142795.0
+271,Peck,Bird,Jock,Play,Leo,Reggae,Simple,Active,Beige,Red,728450.0,238.0,728688.0
+272,Peewee,Gorilla,Cranky,Fitness,Virgo,Rock,Active,Cool,Orange,Blue,826800.0,265.0,827065.0
+273,Peggy,Pig,Peppy,Fashion,Gemini,Latin,Cute,Active,Blue,Red,583800.0,284.0,584084.0
+274,Pekoe,Cub,Normal,Nature,Taurus,Folk,Elegant,Cute,Red,Beige,3381300.0,3155.0,3384455.0
+275,Penelope,Mouse,Peppy,Fashion,Aquarius,Pop,Cute,Gorgeous,Pink,Red,2257900.0,340.0,2258240.0
+276,Phil,Ostrich,Smug,Music,Sagittarius,Blues,Elegant,Cool,Green,Red,2702900.0,720.0,2703620.0
+277,Phoebe,Ostrich,Big Sister,Fitness,Taurus,Latin,Gorgeous,Cool,Black,Red,2198800.0,2149.0,2200949.0
+278,Pierce,Eagle,Jock,Fitness,Capricorn,Jazz,Elegant,Active,Orange,Yellow,1666550.0,510.0,1667060.0
+279,Pietro,Sheep,Smug,Music,Aries,Children's Music,Gorgeous,Simple,Colorful,Red,205800.0,5330.0,211130.0
+280,Pinky,Bear,Peppy,Fashion,Virgo,Folk,Cute,Simple,Red,Pink,2245650.0,904.0,2246554.0
+281,Piper,Bird,Peppy,Play,Aries,Electronic,Elegant,Gorgeous,Black,White,2448100.0,753.0,2448853.0
+282,Pippy,Rabbit,Peppy,Fashion,Gemini,Jazz,Cute,Simple,Green,Brown,1406750.0,429.0,1407179.0
+283,Plucky,Chicken,Big Sister,Play,Libra,Latin,Cool,Simple,Light blue,Yellow,4198250.0,493.0,4198743.0
+284,Pompom,Duck,Peppy,Music,Aquarius,Soul,Cute,Simple,Pink,Light blue,0.0,724.0,724.0
+285,Poncho,Cub,Jock,Fitness,Capricorn,Blues,Simple,Simple,Orange,Yellow,2004950.0,1040.0,2005990.0
+286,Poppy,Squirrel,Normal,Education,Leo,Folk,Cute,Elegant,Green,Yellow,2617300.0,5776.0,2623076.0
+287,Portia,Dog,Snooty,Fashion,Scorpio,Disco,Elegant,Gorgeous,Purple,Black,180400.0,626.0,181026.0
+288,Prince,Frog,Lazy,Play,Cancer,Blues,Simple,Active,Yellow,White,1436210.0,469.0,1436679.0
+289,Puck,Penguin,Lazy,Fitness,Pisces,Classical,Active,Simple,Blue,Red,1310000.0,388.0,1310388.0
+290,Puddles,Frog,Peppy,Fashion,Capricorn,Disco,Cute,Gorgeous,Green,Pink,2263200.0,987.0,2264187.0
+291,Pudge,Cub,Lazy,Play,Gemini,Pop,Simple,Simple,Green,Blue,1845650.0,523.0,1846173.0
+292,Punchy,Cat,Lazy,Play,Aries,Folk,Simple,Simple,Blue,Light blue,801650.0,3969.0,805619.0
+293,Purrl,Cat,Snooty,Fashion,Gemini,Classical,Cool,Elegant,Gray,Blue,2071500.0,897.0,2072397.0
+294,Queenie,Ostrich,Snooty,Fashion,Scorpio,Jazz,Gorgeous,Elegant,Black,Gray,1180250.0,197.0,1180447.0
+295,Quillson,Duck,Smug,Music,Capricorn,Jazz,Elegant,Cool,Beige,Orange,1498650.0,447.0,1499097.0
+296,Raddle,Frog,Lazy,Nature,Gemini,Folk,Elegant,Simple,White,Gray,2194100.0,979.0,2195079.0
+297,Rasher,Pig,Cranky,Music,Aries,Rock,Cool,Simple,Blue,Black,2186250.0,290.0,2186540.0
+298,Raymond,Cat,Smug,Nature,Libra,Funk,Elegant,Cool,Black,Gray,4906350.0,27778.0,4934128.0
+299,Renée,Rhino,Big Sister,Music,Gemini,Rock,Cool,Active,Purple,Yellow,0.0,645.0,645.0
+300,Reneigh,Horse,Big Sister,Play,Gemini,Electronic,Cool,Gorgeous,Black,Purple,1864300.0,2242.0,1866542.0
+301,Rex,Lion,Lazy,Nature,Leo,Children's Music,Simple,Cute,Blue,Light blue,2596450.0,725.0,2597175.0
+302,Rhonda,Rhino,Normal,Music,Aquarius,Electronic,Elegant,Gorgeous,Purple,Black,1554950.0,197.0,1555147.0
+303,Ribbot,Frog,Jock,Fitness,Aquarius,Electronic,Simple,Active,Blue,Light blue,4234500.0,1001.0,4235501.0
+304,Ricky,Squirrel,Cranky,Education,Virgo,World,Cool,Simple,Blue,Red,504300.0,199.0,504499.0
+305,Rizzo,Mouse,Cranky,Education,Capricorn,Folk,Simple,Cool,Black,Gray,1169250.0,177.0,1169427.0
+306,Roald,Penguin,Jock,Fitness,Capricorn,Classical,Active,Simple,Red,Yellow,2094500.0,9805.0,2104305.0
+307,Robin,Bird,Snooty,Fashion,Sagittarius,Funk,Elegant,Cool,Light blue,Purple,78600.0,228.0,78828.0
+308,Rocco,Hippo,Cranky,Education,Leo,Blues,Simple,Cool,Yellow,Black,1695600.0,202.0,1695802.0
+309,Rocket,Gorilla,Big Sister,Fitness,Aries,Folk,Active,Cool,Pink,Red,6068350.0,329.0,6068679.0
+310,Rod,Mouse,Jock,Fitness,Leo,Classical,Active,Cool,Blue,Light blue,5076030.0,604.0,5076634.0
+311,Rodeo,Bull,Lazy,Fitness,Scorpio,Electronic,Simple,Cool,Black,Red,1486100.0,792.0,1486892.0
+312,Rodney,Hamster,Smug,Music,Scorpio,Rock,Gorgeous,Cool,Pink,Colorful,2430000.0,806.0,2430806.0
+313,Rolf,Tiger,Cranky,Fitness,Leo,Latin,Cool,Active,Blue,Black,2053400.0,695.0,2054095.0
+314,Rooney,Kangaroo,Cranky,Fitness,Sagittarius,Folk,Active,Active,Gray,Black,1974600.0,220.0,1974820.0
+315,Rory,Lion,Jock,Music,Leo,World,Simple,Active,Blue,Red,721250.0,246.0,721496.0
+316,Roscoe,Horse,Cranky,Music,Gemini,Electronic,Cool,Gorgeous,Black,Gray,2381800.0,1381.0,2383181.0
+317,Rosie,Cat,Peppy,Music,Pisces,Pop,Cute,Cute,Pink,Red,716300.0,5230.0,721530.0
+318,Rowan,Tiger,Jock,Fitness,Virgo,Rock,Active,Simple,Light blue,Gray,2871300.0,333.0,2871633.0
+319,Ruby,Rabbit,Peppy,Nature,Capricorn,Children's Music,Cute,Active,Light blue,Pink,1182100.0,2898.0,1184998.0
+320,Rudy,Cat,Jock,Play,Sagittarius,Blues,Active,Simple,Yellow,Beige,1476600.0,1533.0,1478133.0
+321,Sally,Squirrel,Normal,Music,Gemini,Blues,Simple,Elegant,White,Beige,1815150.0,501.0,1815651.0
+322,Samson,Mouse,Jock,Fitness,Cancer,Rock,Simple,Active,Red,Yellow,679360.0,242.0,679602.0
+323,Sandy,Ostrich,Normal,Nature,Libra,Soul,Simple,Cool,Light blue,White,3076000.0,210.0,3076210.0
+324,Savannah,Horse,Normal,Music,Aquarius,Folk,Cool,Simple,Light blue,Blue,2405900.0,878.0,2406778.0
+325,Scoot,Duck,Jock,Fitness,Gemini,Reggae,Active,Simple,Beige,Blue,2249450.0,1382.0,2250832.0
+326,Shari,Monkey,Big Sister,Music,Aries,Funk,Cute,Active,Light blue,Yellow,2600450.0,1200.0,2601650.0
+327,Sheldon,Squirrel,Jock,Play,Pisces,Country,Active,Cool,Green,Yellow,2371100.0,607.0,2371707.0
+328,Shep,Dog,Smug,Education,Sagittarius,Funk,Simple,Cool,Light blue,Blue,2447500.0,1841.0,2449341.0
+329,Sherb,Goat,Lazy,Nature,Capricorn,Electronic,Simple,Cute,Gray,Blue,5608850.0,19883.0,5628733.0
+330,Simon,Monkey,Lazy,Play,Capricorn,World,Simple,Active,Red,Colorful,1987000.0,360.0,1987360.0
+331,Skye,Wolf,Normal,Music,Aries,Folk,Cute,Cute,Blue,White,3743150.0,3727.0,3746877.0
+332,Sly,Alligator,Jock,Play,Scorpio,World,Cool,Simple,Brown,Green,1931700.0,490.0,1932190.0
+333,Snake,Rabbit,Jock,Fitness,Scorpio,World,Active,Simple,Black,Blue,267700.0,1394.0,269094.0
+334,Snooty,Anteater,Snooty,Education,Scorpio,Folk,Simple,Simple,Green,Yellow,2994700.0,171.0,2994871.0
+335,Soleil,Hamster,Snooty,Education,Leo,World,Cool,Gorgeous,Red,Yellow,2555500.0,311.0,2555811.0
+336,Sparro,Bird,Jock,Play,Scorpio,Children's Music,Active,Simple,Green,Gray,2174900.0,197.0,2175097.0
+337,Spike,Rhino,Cranky,Nature,Gemini,Electronic,Cool,Gorgeous,Black,Gray,2437500.0,456.0,2437956.0
+338,Spork,Pig,Lazy,Play,Virgo,Folk,Simple,Active,Green,Colorful,2114500.0,311.0,2114811.0
+339,Sprinkle,Penguin,Peppy,Play,Pisces,World,Cute,Elegant,Light blue,White,2064400.0,3421.0,2067821.0
+340,Sprocket,Ostrich,Jock,Music,Sagittarius,Rock,Simple,Active,Orange,Green,2279600.0,1179.0,2280779.0
+341,Static,Squirrel,Cranky,Music,Cancer,Rock,Cool,Active,Black,Yellow,691100.0,1767.0,692867.0
+342,Stella,Sheep,Normal,Nature,Aries,Blues,Simple,Simple,Yellow,Beige,2687400.0,985.0,2688385.0
+343,Sterling,Eagle,Jock,Fitness,Sagittarius,World,Simple,Elegant,Blue,Red,3903250.0,649.0,3903899.0
+344,Stinky,Cat,Jock,Fitness,Leo,Latin,Active,Simple,Red,Blue,1671800.0,637.0,1672437.0
+345,Stitches,Cub,Lazy,Play,Aquarius,Children's Music,Simple,Cute,Colorful,White,1597500.0,12548.0,1610048.0
+346,Stu,Bull,Lazy,Nature,Taurus,Rock,Simple,Simple,Brown,Beige,1687950.0,536.0,1688486.0
+347,Sydney,Koala,Normal,Music,Cancer,Jazz,Cute,Simple,Beige,Yellow,763710.0,1075.0,764785.0
+348,Sylvana,Squirrel,Normal,Nature,Libra,Folk,Cute,Simple,Green,Purple,1583900.0,1755.0,1585655.0
+349,Sylvia,Kangaroo,Big Sister,Music,Taurus,Electronic,Simple,Gorgeous,Yellow,Green,2437800.0,394.0,2438194.0
+350,T-Bone,Bull,Cranky,Education,Taurus,Folk,Cool,Simple,Blue,Black,1258900.0,227.0,1259127.0
+351,Tabby,Cat,Peppy,Music,Leo,Electronic,Active,Cool,Black,Gray,1527500.0,2534.0,1530034.0
+352,Tad,Frog,Jock,Play,Leo,Children's Music,Active,Simple,Yellow,Colorful,1634500.0,392.0,1634892.0
+353,Tammi,Monkey,Peppy,Fashion,Aries,Folk,Cute,Active,Purple,Green,2288100.0,396.0,2288496.0
+354,Tammy,Cub,Big Sister,Play,Cancer,Electronic,Cool,Active,Red,Purple,3005650.0,793.0,3006443.0
+355,Tangy,Cat,Peppy,Music,Gemini,Children's Music,Simple,Cute,Green,Yellow,1179750.0,5608.0,1185358.0
+356,Tank,Rhino,Jock,Fitness,Taurus,Blues,Active,Simple,Red,Green,1632550.0,639.0,1633189.0
+357,Tasha,Squirrel,Snooty,Fitness,Sagittarius,Electronic,Elegant,Gorgeous,Beige,Gray,2077300.0,1024.0,2078324.0
+358,Teddy,Bear,Jock,Fitness,Libra,Folk,Simple,Simple,Yellow,Orange,1811820.0,1617.0,1813437.0
+359,Tex,Penguin,Smug,Music,Libra,Electronic,Cool,Elegant,Black,Gray,2619900.0,592.0,2620492.0
+360,Tia,Elephant,Normal,Nature,Scorpio,Latin,Cute,Elegant,Black,White,2470000.0,4682.0,2474682.0
+361,Tiffany,Rabbit,Snooty,Fashion,Capricorn,Jazz,Gorgeous,Cool,Black,Red,994100.0,804.0,994904.0
+362,Timbra,Sheep,Snooty,Education,Libra,Rhythm & Blues,Elegant,Gorgeous,Green,Brown,1803800.0,256.0,1804056.0
+363,Tipper,Cow,Snooty,Fashion,Virgo,Soul,Gorgeous,Cute,Colorful,Pink,2578650.0,686.0,2579336.0
+364,Tom,Cat,Cranky,Education,Sagittarius,Rock,Cool,Simple,Black,Gray,1989950.0,761.0,1990711.0
+365,Truffles,Pig,Peppy,Fashion,Leo,Folk,Cute,Gorgeous,Green,Red,1875850.0,236.0,1876086.0
+366,Tucker,Elephant,Lazy,Nature,Virgo,World,Active,Simple,Yellow,Orange,230100.0,406.0,230506.0
+367,Tutu,Bear,Peppy,Fashion,Virgo,Pop,Cute,Simple,Pink,Red,1247100.0,1119.0,1248219.0
+368,Twiggy,Bird,Peppy,Fashion,Cancer,Pop,Simple,Cute,Pink,Blue,1234000.0,541.0,1234541.0
+369,Tybalt,Tiger,Jock,Play,Leo,Jazz,Active,Simple,Blue,Purple,2402300.0,481.0,2402781.0
+370,Ursala,Bear,Big Sister,Music,Capricorn,World,Simple,Cute,Red,Orange,2133000.0,521.0,2133521.0
+371,Velma,Goat,Snooty,Education,Capricorn,Folk,Elegant,Gorgeous,Light blue,Purple,1967850.0,232.0,1968082.0
+372,Vesta,Sheep,Normal,Fashion,Aries,Folk,Simple,Cute,Orange,Red,1072400.0,1097.0,1073497.0
+373,Vic,Bull,Cranky,Fitness,Capricorn,Classical,Cool,Active,Light blue,Blue,542350.0,313.0,542663.0
+374,Victoria,Horse,Peppy,Fitness,Cancer,Folk,Active,Simple,Yellow,Orange,2070800.0,362.0,2071162.0
+375,Violet,Gorilla,Snooty,Fitness,Virgo,World,Gorgeous,Cool,Purple,Pink,876730.0,147.0,876877.0
+376,Vivian,Wolf,Snooty,Education,Aquarius,Funk,Gorgeous,Elegant,Gray,Purple,1395550.0,1098.0,1396648.0
+377,Vladimir,Cub,Cranky,Play,Leo,Jazz,Simple,Cool,Yellow,Colorful,2120800.0,382.0,2121182.0
+378,Wade,Penguin,Lazy,Nature,Scorpio,Children's Music,Simple,Gorgeous,Light blue,Blue,1123550.0,1434.0,1124984.0
+379,Walker,Dog,Lazy,Play,Gemini,Rock,Simple,Simple,Orange,Red,3123900.0,921.0,3124821.0
+380,Walt,Kangaroo,Cranky,Fitness,Taurus,Blues,Cool,Cool,Black,Gray,474440.0,692.0,475132.0
+381,Wart Jr.,Frog,Cranky,Education,Leo,Pop,Simple,Simple,Blue,Purple,0.0,517.0,517.0
+382,Weber,Duck,Lazy,Nature,Cancer,Rhythm & Blues,Cool,Simple,Blue,Black,1361700.0,650.0,1362350.0
+383,Wendy,Sheep,Peppy,Fashion,Leo,Electronic,Cool,Gorgeous,Red,Green,1055550.0,1140.0,1056690.0
+384,Whitney,Wolf,Snooty,Fashion,Virgo,Soul,Elegant,Cool,Blue,Light blue,1227400.0,4464.0,1231864.0
+385,Willow,Sheep,Snooty,Fashion,Sagittarius,Soul,Cute,Gorgeous,White,Pink,742840.0,893.0,743733.0
+386,Winnie,Horse,Peppy,Fashion,Aquarius,Country,Cool,Simple,White,Gray,1919900.0,425.0,1920325.0
+387,Wolfgang,Wolf,Cranky,Education,Sagittarius,Electronic,Cool,Active,Black,Green,4188750.0,2888.0,4191638.0
+388,Yuka,Koala,Snooty,Fashion,Cancer,Soul,Cool,Elegant,Orange,Yellow,2017100.0,501.0,2017601.0
+389,Zell,Deer,Smug,Music,Gemini,Funk,Cool,Gorgeous,Purple,Gray,2097950.0,2839.0,2100789.0
+390,Zucker,Octopus,Lazy,Nature,Pisces,Folk,Simple,Cute,Blue,Yellow,2512500.0,17442.0,2529942.0
