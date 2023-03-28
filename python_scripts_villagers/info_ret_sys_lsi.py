@@ -17,8 +17,10 @@ class RetrievalSystem(object):
         RetrievalSystem setup for lsi, creation of doc term matrix, and query vectors
         """
         self.path_file = path_file
+        # self.villagers = pd.read_csv("villagers_final.csv")
         self.villagers = pd.read_csv(self.path_file+"villagers_final.csv")
         self.user_list = user_list
+        # self.villagers_id= pd.read_csv("villagers_id.csv")
         self.villagers_id= pd.read_csv(self.path_file+"villagers_id.csv")
         
         self.villagers.drop(columns=['Unnamed: 0'],inplace=True)

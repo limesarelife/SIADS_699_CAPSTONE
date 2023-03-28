@@ -17,12 +17,14 @@
         <p class = "para-style-int">Find your ideal Animal Crossing New Horizons Villager most like you by completing the quiz below.</p>
     </div>
 
-    <form id="form1">
-        <div class = "bubble-container3">
-            <h2 class = "text-h2">Name: <input type="text" id="yourname" name="yourname" /></h2>
+    <form id="form1" action = "" method = "POST">
+        {% csrf_token %}
+        <div class="bubble-container3">
+            <label class="text-h2">Name: <input type="text" id="yourname" name="yourname" /></label>
         </div>
-        <div class = "bubble-container3">
-            <h2 class = "text-h2">1. What is your favorite species?</h2>
+        <div class="bubble-container3">
+            <label class="text-h2" for="species">1. What is your favorite species?</label>
+
             <select id="species" class = "select-dropper">
                 <option>Choose One:</option>
                 <option>Alligator</option>
@@ -63,10 +65,10 @@
             </select>
         </div>
         
-        <div class = "bubble-container3">
-            <h2 class = "text-h2" >2. How would you describe yourself?</h2>
+        <div class="bubble-container3">
+            <label class="text-h2" for="personality">2. How would you describe yourself?</label>
         
-            <select id="personality" class = "select-dropper">
+            <select id="personality" class="select-dropper">
                 <option>Choose One:</option>
                 <option>Big Sister</option>
                 <option>Cranky</option>
@@ -80,7 +82,7 @@
         </div>
         
         <div class = "bubble-container3">
-            <h2 class = "text-h2" >3. What is your favorite hobby?</h2>
+            <label class = "text-h2" for ="hobby" >3. What is your favorite hobby?</label>
 
             <select id="hobby" class = "select-dropper">
                 <option>Choose One:</option>
@@ -94,7 +96,7 @@
         </div>
         
         <div class = "bubble-container3">
-            <h2 class = "text-h2" >4. What is your astrological sign?</h2>
+            <label class = "text-h2" for="astrological">4. What is your astrological sign?</label>
         
             <select id="astrological" class = "select-dropper">
                 <option>Choose One:</option>
@@ -114,7 +116,7 @@
         </div>
 
         <div class = "bubble-container3">
-            <h2 class = "text-h2" >5. What is your favorite genre of music?</h2>
+            <label class = "text-h2" for="music">5. What is your favorite genre of music?</label>
             <select id="music" class = "select-dropper">
                 <option>Choose One:</option>
                 <option>Rock</option>
@@ -133,7 +135,7 @@
         </div>
 
         <div class = "bubble-container3">
-            <h2 class = "text-h2" >6. How would you describe your personal style most of the time?</h2>
+            <label class = "text-h2" for="style1">6. How would you describe your personal style most of the time?</label>
             <select id="style1" class = "select-dropper">
                 <option>Choose One:</option>
                 <option>Active</option>
@@ -146,7 +148,7 @@
         </div>
 
         <div class = "bubble-container3">
-            <h2 class = "text-h2" >7. What other style do you like?</h2>
+            <label class = "text-h2" for="style2">7. What other style do you like?</label>
             <select id="style2" class = "select-dropper">
                 <option>Choose One:</option>
                 <option>Active</option>
@@ -159,7 +161,7 @@
         </div>
 
         <div class = "bubble-container3">
-            <h2 class = "text-h2" >8. What is your favorite color?</h2>
+            <label class = "text-h2" for="color1">8. What is your favorite color?</label>
             <select id="color1" class = "select-dropper">
                 <option>Choose One:</option>
                 <option>Beige</option>
@@ -180,7 +182,7 @@
         </div>
 
         <div class = "bubble-container3">
-            <h2 class = "text-h2" >9. What is your second favorite color?</h2>
+            <label class = "text-h2" for="color2">9. What is your second favorite color?</label>
         
             <select id="color2" class = "select-dropper">
                 <option>Choose One:</option>
