@@ -24,7 +24,7 @@ def home_view(request):
             v_id1, v_id2 = user_sim_cl.get_villagers_id(vil_1 = villager_1, vil_2 = villager_2)
             v_name1, v_img1, v_name2, v_img2 = user_sim_cl.return_image(v_id1, v_id2)
             vil_info : dict = {"Option_1":v_name1,"Villager_1":v_img1 ,"Option_2":v_name2, "Villager_2": v_img2}
-            print(vil)
+            print(vil_info)
             return redirect(reverse('find_villager_home_app:final_vil',kwargs=vil_info))
         else:
             print(form.cleaned_data)
