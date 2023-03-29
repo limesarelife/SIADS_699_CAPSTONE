@@ -50,7 +50,7 @@
             </select>
         </div>
         
-        <div class="bubble-container3">
+        <div class="bubble-container3BIG">
             <label class = "text-h2" for ="villager_why" >2. Why do you prefer the villager picked in question 1?</label>
 
             <select name="villager_why" id="villager_why" class = "select-dropper">
@@ -58,6 +58,7 @@
                 <option>You have interacted or had the villager on your island and you do not care for them.</option>
                 <option>You prefer the looks of the villager option picked.</option>
                 <option>You feel the villager option chosen is more similar to you.</option>
+                <option>Both villagers suggested are the same.</option>
             </select>
         </div>
         <a href="{% url 'find_villager_home_app:response_quiz' %}"><button type="submit" value="Submit" class = "button-submit">Submit</button></a>
@@ -66,7 +67,7 @@
     <footer>
         <div class="footer-container">
             <h5>
-                Donate to the ICUN Red List and go to our Github.
+                Donate to the <a href="https://www.iucnredlist.org/support/donate">ICUN Red List</a> and go to our Github.
                 This page was made for our capstone.
                 We have no affiliation with the game or Ninetendo.
             </h5>

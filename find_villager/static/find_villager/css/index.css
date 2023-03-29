@@ -78,6 +78,24 @@ border-radius: 35px;
 
 }
 
+.bubble-container3BIG{
+    display: inline-table;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    height: 40px;
+    background-color: #23be2c;
+    /* background-color:rgb(241, 179, 22); */
+    /* border-radius: 40px; */
+    border-color: ivory;
+    gap: 20px;
+    margin-bottom: 15px;
+    margin-inline-start: 25%;
+    margin-inline-end: 25%;
+    /* border-width: 15px; */
+    border: 2px solid ivory;
+    border-radius: 35px;
+}    
 
 .bubble-containerBig {
     display: inline-flex;
