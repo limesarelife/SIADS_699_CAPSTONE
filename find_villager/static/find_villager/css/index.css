@@ -96,6 +96,7 @@ margin-bottom: 20px;
     font-size: 14px;
     font-family: 'Varela Round';
     font-weight: bold;
+    text-align: center;
 
 }
 .text-h1{
@@ -143,8 +144,11 @@ margin-bottom: 20px;
     color: #9b6731;
     /* background-color: gold; */
     background-color: ivory;
-    margin: 10px;
+    margin: 10px auto;
     cursor: pointer;
+    text-align: center;
+    display: block;
+    /* margin: 0 auto; */
 
 }
 

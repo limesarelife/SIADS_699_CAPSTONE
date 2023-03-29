@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team-Animal-Crossing</title>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Varela+Round" />
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelementplayer.min.css" rel="stylesheet"/> -->
     <link rel="stylesheet" type="text/css" href="{% static 'find_villager/css/index.css'%}" />
 </head>
 <body>
@@ -128,11 +129,18 @@
                 <option>Blues</option>
                 <option>Jazz</option>
                 <option>Electronic</option>
-                <option>Rhythm and Blues</option>
+                <option>Rhythm & Blues</option>
+                <option>Disco</option>
                 <option>Funk</option>
                 <option>Reggae</option>
                 <option>Swing</option>
                 <option>Pop</option>
+                <option>Classical</option>
+                <option>Blues</option>
+                <option>World</option>
+                <option>Latin</option> 
+                <option>Children's Music</option>
+                <option>Soul</option>
             </select>
         </div>
 
@@ -213,9 +221,9 @@
     <!-- <p style = "color:saddlebrown;font-size: 18px;font-family: 'Varela Round';font-weight: bold;">Find your ideal Animal Crossing New Horizons Villager most like you by completing the quiz below.</p> -->
     <!-- background-color:rgb(241, 179, 22);background-size: 95%; -->
     <div class = "bubble-container3">
-        <audio controls autoplay>
-            <source src="{% static 'find_villager/mp3/AC_Main_Theme_Welcome_Horizons.mp3' %}" type="audio/mpeg" >
-        </audio>
+        <audio class='fc-media' controls autoplay src= "{% static 'find_villager/mp3/AC_Main_Theme_Welcome_Horizons.mp3' %}" type="audio/mpeg"></audio>
+        <!-- <audio controls autoplay src= "{% static 'find_villager/mp3/AC_Main_Theme_Welcome_Horizons.mp3' %}" type="audio/mpeg" </audio> -->
+            <!-- Your browser does not support the audio element. -->
     </div>
 
     <footer>
