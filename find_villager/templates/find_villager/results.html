@@ -14,35 +14,54 @@
         <h1 class = "text-h1">What ACNH Villager Are You?</h1>
     </div>
 
-    <div class = "bubble-containerIntro">
-        <p class = "para-style-int">Your ideal Animal Crossing New Horizons Villager most like you by completing the quiz below.</p>
-    </div>
-
-    
     <div class = "bubble-container3">
         <p class = "para-style-int">The ACNH Villagers "most like"  you are: </p>
         </p>
     </div>
-    
-
     <div class = "bubble-container3">
-        <p class = "para-style-int"> {{Option_1}} </p>
+        <p class = "para-style-int">Villger Option 1: {{Option_1}} </p>
         </p>
     </div>
 
     <div class = "bubble-containerBig">
-        <img src =  "{% static Villager_1 %}" >
+        <img class="bubble-containerBig img" src =  "{% static Villager_1 %}" >
     </div>
     <div class = "bubble-container3">
-        <p class = "para-style-int"> {{Option_2}} </p>
+        <p class = "para-style-int">Villager Option 2: {{Option_2}} </p>
         </p>
     </div>
 
     <div class = "bubble-containerBig">
-        <img src =  "{% static Villager_2 %}" >
+        <img class="bubble-containerBig img" src =  "{% static Villager_2 %}" >
     </div>
+
     <!-- <p style = "color:saddlebrown;font-size: 18px;font-family: 'Varela Round';font-weight: bold;">Find your ideal Animal Crossing New Horizons Villager most like you by completing the quiz below.</p> -->
     <!-- background-color:rgb(241, 179, 22);background-size: 95%; -->
+    <form id="form2" method="POST">
+        {% csrf_token %}
+        
+        <div class="bubble-container3">
+            <label class="text-h2" for="villager_option">1. Which villager do you prefer?</label>
+        
+            <select name="villager_option" id="villager_option" class="select-dropper">
+                <option value="" disabled selected>Choose One:</option>
+                <option>Villager 1</option>
+                <option>Villager 2</option>
+            </select>
+        </div>
+        
+        <div class="bubble-container3">
+            <label class = "text-h2" for ="villager_why" >2. Why do you prefer the villager picked in question 1?</label>
+
+            <select name="villager_why" id="villager_why" class = "select-dropper">
+                <option value="" disabled selected>Choose One:</option>
+                <option>You have interacted or had the villager on your island and you do not care for them.</option>
+                <option>You prefer the looks of the villager option picked.</option>
+                <option>You feel the villager option chosen is more similar to you.</option>
+            </select>
+        </div>
+        <p><button type="submit" value="Submit" class = "button-submit">Submit</button></p>
+    </form>
 
     <footer>
         <div class="footer-container">

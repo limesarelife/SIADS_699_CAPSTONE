@@ -12,3 +12,8 @@ class VillagerForm(forms.Form):
     color1 = forms.CharField(max_length=100, required=True)
     color2 = forms.CharField(max_length=100, required=True)
 
+class VillagerResponse(forms.Form):
+    villager_option = forms.CharField(max_length=100, required=True)
+    villager_why = forms.CharField(max_length=800, required=True)
+    
+

@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.http import HttpResponse
 from .forms import VillagerForm
+from .forms import VillagerResponse 
 from .python_scripts_villagers import info_ret_sys_lsi, info_ret_sys_wemb
 
 # Create your views here.
@@ -48,8 +49,27 @@ def home_view(request):
     # print(request.POST)
     return render(request, 'find_villager/index.html')
 
-# def final_villager(request, **kwargs):
-#     print(kwargs)
-#     return render(request, 'find_villager/results.html', context=kwargs)
+def villager_response(request):
+    if request.method == 'POST':
+        form = VillagerResponse(request.POST)
+        print(request.POST)
+        if form.is_valid():
+            # process the data in form.cleaned_data as required
+            # ...
+            # redirect to a new URL:
+            
+            # print(form.cleaned_data)
+            print(form.cleaned_data)
+            # user_list_this = list(user_dict.values())
+            return HttpResponse("Thank you for taking the quiz!")
+        # redirect(reverse('find_villager_home_app:final_vil', kwargs=vil_info),
+        #                     Option_1=v_name1, Villager_1=v_img1, Option_2=v_name2, Villager_2=v_img2)
+        else:
+            print(form.cleaned_data)
+            # print(form.cleaned_data)
+            return HttpResponse("Please fill out all questions.")
+    # print(request.POST)
+    return render(request, 'find_villager_home_app:response_quiz')
+
 
 

@@ -78,12 +78,13 @@ border-radius: 35px;
 
 }
 
-.bubble-containerBig{
-    display: inline-table;
+
+.bubble-containerBig {
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
     width: 35%;
-    height: 250px;
+    height: 300px;
     background-color: #23be2c;
     /* background-color:rgb(241, 179, 22); */
     /* border-radius: 40px; */
@@ -95,6 +96,7 @@ border-radius: 35px;
     /* border-width: 15px; */
     border: 2px solid ivory;
     border-radius: 35px;
+    align-items: center;
     
     }
 
@@ -133,6 +135,17 @@ margin-bottom: 20px;
     font-family: 'Varela Round';
     font-weight: bold;
 }
+
+.bubble-containerBig img{
+    /* color:#9b6731; */
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+    /* vertical-align: middle; */
+}
+
 .button-submit{
    font-family: 'Varela Round';
    color: ivory;
