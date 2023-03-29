@@ -114,7 +114,7 @@ class RetrievalSystem(object):
         # img_vil2 = Image.open(BytesIO(response_vil2.content))
         # img_vil2.show(title = str(v_name2))
 
-        return v_name1, img_vil1, v_name2, img_vil2
+        return v_name1, img_vil1
     
 if __name__ == "__main__":
     user_sim_cl = RetrievalSystem(path_file = ("./python_scripts_villagers/"), num_topics=9,
@@ -122,6 +122,6 @@ if __name__ == "__main__":
                               )
     villager_1, villager_2 = user_sim_cl.retrieve_n_rank_docs()
     v_id1, v_id2 = user_sim_cl.get_villagers_id(vil_1 = villager_1, vil_2 = villager_2)
-    v_name1, v_img1, v_name2, v_img2 = user_sim_cl.return_image(v_id1, v_id2)
+    v_name1, v_img1 = user_sim_cl.return_image(v_id1, v_id2)
     # print(v_id1, v_id2)
     

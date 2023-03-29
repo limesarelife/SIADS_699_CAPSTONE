@@ -72,19 +72,10 @@ class RetrievalSystem_wb:
 
         v_name1 = vil_1_tup[0]
         v_name2 = vil_2_tup[0]
+        img_vil1 = f"find_villager/images/villagers/{vil_1_tup[1]}.png"
+        img_vil2 = f"find_villager/images/villagers/{vil_2_tup[1]}.png"
 
-        url_vil1 = f'https://acnhapi.com/v1a/images/villagers/{vil_1_tup[1]}'
-        response_vil1 = requests.get(url_vil1)
-        img_vil1 = Image.open(BytesIO(response_vil1.content))
-        # img_vil1.show(title = str(v_name1))
-
-        url_vil2 = f'https://acnhapi.com/v1a/images/villagers/{vil_2_tup[1]}'
-        response_vil2 = requests.get(url_vil2)
-        img_vil2 = Image.open(BytesIO(response_vil2.content))
-        # img_vil2.show(title = str(v_name2))
-
-        return v_name1, img_vil1.show(title = str(v_name1)), v_name2, img_vil2.show(title = str(v_name2))
-
+        return v_name1, img_vil1
 if __name__ == "__main__":
     user_sim_cls = RetrievalSystem_wb(path_file = ("./python_scripts_villagers/"),
                                 user_list = ['Cat','Smug','Fitness','Gemini','Electronic','Active','Gorgeous','Green','Light Blue'],
@@ -92,4 +83,4 @@ if __name__ == "__main__":
     villager_sim = user_sim_cls.get_cossim_villagers()
     v_id1, v_id2 = user_sim_cls.finalize_sim_villagers(villager_sim)
     # print(v_id1, v_id2)
-    v_name1, v_img1, v_name2, v_img2 = user_sim_cls.return_image(v_id1, v_id2)
+    v_name1, v_img1 = user_sim_cls.return_image(v_id1, v_id2)

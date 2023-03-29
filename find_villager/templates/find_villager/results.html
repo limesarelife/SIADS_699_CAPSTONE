@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team-Animal-Crossing</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Varela+Round" />
+    <link rel="stylesheet" type="text/css" href="{% static 'find_villager/css/index.css'%}" />
+</head>
+<body>
+    <div class = "bubble-containerhead">
+        <h1 class = "text-h1">What ACNH Villager Are You?</h1>
+    </div>
+
+    <div class = "bubble-containerIntro">
+        <p class = "para-style-int">Your ideal Animal Crossing New Horizons Villager most like you by completing the quiz below.</p>
+    </div>
+
+    
+    <div class = "bubble-container3">
+        <p class = "para-style-int">The ACNH Villager "most like"  you is: </p>
+        </p>
+    </div>
+    
+    {for item in results}
+    <div class = "bubble-container3">
+        <p class = "para-style-int"> {{item}} </p>
+        </p>
+    </div>
+    <!-- <p style = "color:saddlebrown;font-size: 18px;font-family: 'Varela Round';font-weight: bold;">Find your ideal Animal Crossing New Horizons Villager most like you by completing the quiz below.</p> -->
+    <!-- background-color:rgb(241, 179, 22);background-size: 95%; -->
+
+    <footer>
+        <div class="footer-container">
+            <h5>
+                Donate to the ICUN Red List and go to our Github.
+                This page was made for our capstone.
+                We have no affiliation with the game or Ninetendo.
+            </h5>
+        </div>
+    </footer>
+
+    <!-- <div class="footer">
+        <svg viewBox="0 0 500 150">
+          <path d="M-2.25,0.50 C112.87,185.03 362.87,-79.44 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill:#bfe4c1;"></path>
+        </svg>
+    </div> -->
+</body>
+</html>
