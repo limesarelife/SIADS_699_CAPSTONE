@@ -32,12 +32,15 @@ def home_view(request):
             
 
             villager_sim = user_sim_cls.get_cossim_villagers()
-            v_id1, v_id2 = user_sim_cls.finalize_sim_villagers(villager_sim)
-            v_name2, v_img2 = user_sim_cls.return_image(v_id1, v_id2)
+            v_id1_wemb, v_id2_wemb = user_sim_cls.finalize_sim_villagers(villager_sim)
+            v_name2, v_img2 = user_sim_cls.return_image(v_id1_wemb, v_id2_wemb)
             
-            vil_info : dict = {"Option_1":v_name1,"Villager_1":v_img1 ,"Option_2":v_name2, "Villager_2": v_img2}
-            # print(vil_info)
-            return redirect(reverse('find_villager_home_app:final_vil',kwargs=vil_info))
+            vil_info = {"Option_1":str(v_name1),"Villager_1":str(v_img1),
+                               "Option_2":str(v_name2),"Villager_2":str(v_img2)}
+            print(vil_info)
+            return render(request, 'find_villager/results.html', context=vil_info)
+        # redirect(reverse('find_villager_home_app:final_vil', kwargs=vil_info),
+        #                     Option_1=v_name1, Villager_1=v_img1, Option_2=v_name2, Villager_2=v_img2)
         else:
             # print(form.cleaned_data)
             
@@ -45,8 +48,8 @@ def home_view(request):
     # print(request.POST)
     return render(request, 'find_villager/index.html')
 
-def final_villager(request, **kwargs):
-    print(kwargs)
-    return render(request, 'find_villager/results.html')
+# def final_villager(request, **kwargs):
+#     print(kwargs)
+#     return render(request, 'find_villager/results.html', context=kwargs)
 
 
