@@ -75,7 +75,7 @@ class RetrievalSystem_wb:
         img_vil1 = f"find_villager/images/villagers/{vil_1_tup[1]}.png"
         img_vil2 = f"find_villager/images/villagers/{vil_2_tup[1]}.png"
 
-        return v_name1, img_vil1
+        return str(v_name1), img_vil1
 if __name__ == "__main__":
     user_sim_cls = RetrievalSystem_wb(path_file = ("./python_scripts_villagers/"),
                                 user_list = ['Cat','Smug','Fitness','Gemini','Electronic','Active','Gorgeous','Green','Light Blue'],
