@@ -3,7 +3,7 @@ from django.urls import reverse
 from django.http import HttpResponse
 from .forms import VillagerForm, VillagerResponse
 from .python_scripts_villagers import info_ret_sys_lsi, info_ret_sys_wemb
-
+from .models import VillagerResponseDB
 # Create your views here.
 def home_view(request):
     if request.method == 'POST':
@@ -64,7 +64,7 @@ def villager_response(request):
             # process the data in form.cleaned_data as required
             # ...
             # redirect to a new URL:
-            
+            # form.save(commit=False)
             print(form.cleaned_data)
             # print(form.cleaned_data)
 

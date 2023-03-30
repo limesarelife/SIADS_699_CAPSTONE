@@ -19,7 +19,7 @@ class ACP_Combine:
                     df = pd.read_excel(self.path_file+filename)
                     df = df[['Villagers','Tally']]
                     #df = df[df['Villagers']].notna()
-                    ACP_PollRes2020 = ACP_PollRes2020.append(df)
+                    ACP_PollRes2020 = ACP_PollRes2020.append(df) # type: ignore
         # Removing villagers who never received any votes
         ACP_PollRes2020 = ACP_PollRes2020[ACP_PollRes2020['Villagers'].notna()].copy()
 
@@ -44,7 +44,7 @@ class ACP_Combine:
                     df = pd.read_excel(self.path_file+filename)
                     df = df[['Villagers','Tally']]
                     #df = df[df['Villagers']].notna()
-                    ACP_PollRes2021 = ACP_PollRes2021.append(df)
+                    ACP_PollRes2021 = ACP_PollRes2021.append(df) # type: ignore
         
         # Getting full tally of votes for Villagers with groupby
         ACP_2021 = ACP_PollRes2021.groupby(by = 'Villagers',dropna=True).Tally.sum().reset_index()
@@ -66,7 +66,7 @@ class ACP_Combine:
                     df = pd.read_excel(self.path_file+filename)
                     df = df[['Villagers','Tally']]
                     #df = df[df['Villagers']].notna()
-                    ACP_PollRes2022 = ACP_PollRes2022.append(df)
+                    ACP_PollRes2022 = ACP_PollRes2022.append(df) # type: ignore
         
         # Getting full tally of votes for Villagers with groupby
         ACP_2022 = ACP_PollRes2022.groupby(by = 'Villagers',dropna=True).Tally.sum().reset_index()
