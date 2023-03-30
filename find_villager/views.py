@@ -64,10 +64,11 @@ def villager_response(request):
             # process the data in form.cleaned_data as required
             # ...
             # redirect to a new URL:
-            # form.save(commit=False)
             print(form.cleaned_data)
             # print(form.cleaned_data)
-
+            form_data = VillagerResponseDB(villager_option=form.cleaned_data['villager_option'],
+                                           villager_why = form.cleaned_data['villager_why'])
+            form_data.save()
             # user_list_this = list(user_dict.values())
             return render(request, 'find_villager/thankyou.html')
         # redirect(reverse('find_villager_home_app:final_vil', kwargs=vil_info),
@@ -84,6 +85,7 @@ def villager_response(request):
     # print(request.POST)
         return render(request, 'find_villager/results.html', context = {"Option_1":vi1,"Villager_1":vim1,
                                                                     "Option_2":vi2,"Villager_2":vim2})
+
 
 
 
