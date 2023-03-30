@@ -117,7 +117,7 @@ class RetrievalSystem(object):
         return v_name1, img_vil1
     
 if __name__ == "__main__":
-    user_sim_cl = RetrievalSystem(path_file = ("./python_scripts_villagers/"), num_topics=9,
+    user_sim_cl = RetrievalSystem(path_file = ("./find_villager/python_scripts_villagers/villagers_final.csv"), num_topics=9,
                               user_list = ['Cub','Cranky','Play','Taurus','Funk','Simple','Active','Green','Light blue'],
                               )
     villager_1, villager_2 = user_sim_cl.retrieve_n_rank_docs()

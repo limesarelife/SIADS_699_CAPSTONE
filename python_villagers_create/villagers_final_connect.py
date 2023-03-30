@@ -79,10 +79,10 @@ class Connect_Res_Vill():
         return final_villagers_ACNH.to_csv(self.path_out+'villagers_acnh_votes_combined.csv', index = False)
     
 
-start_connect = Connect_Res_Vill(path_file_pytrend ="./python_scripts_villagers/final_pytrends.csv",
-                                 path_file_acp_poll = "./python_scripts_villagers/ACP_Final.csv", 
-                                 path_out = "./python_scripts_villagers/", 
-                                 villagers_file= "./python_scripts_villagers/villagers.csv")
+start_connect = Connect_Res_Vill(path_file_pytrend ="./python_villagers_create/final_pytrends.csv",
+                                 path_file_acp_poll = "./python_villagers_create/ACP_Final.csv", 
+                                 path_out = "./python_villagers_create/", 
+                                 villagers_file= "./python_villagers_create/villagers.csv")
 vil_w_pytrend = start_connect.prep_fin_pytrend()
 vil_w_acp_pytrend = start_connect.prep_fin_ACP(vil_w_pytrend)
     

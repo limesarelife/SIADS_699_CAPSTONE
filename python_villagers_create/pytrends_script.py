@@ -77,7 +77,7 @@ class fetch_trends:
 
         return finalVillagerdf.to_csv(self.path_file+"/final_pytrends.csv",index = False)
 
-start_acnh_pytrends = fetch_trends("./python_scripts_villagers/")
+start_acnh_pytrends = fetch_trends("./python_villagers_create/")
 trend_payloads = start_acnh_pytrends.get_trends()
 print(trend_payloads)
 final_trends = start_acnh_pytrends.convert_results(trend_payloads)

@@ -77,7 +77,7 @@ class RetrievalSystem_wb:
 
         return str(v_name1), img_vil1
 if __name__ == "__main__":
-    user_sim_cls = RetrievalSystem_wb(path_file = ("./python_scripts_villagers/"),
+    user_sim_cls = RetrievalSystem_wb(path_file = ("./find_villager/python_scripts_villagers/"),
                                 user_list = ['Cat','Smug','Fitness','Gemini','Electronic','Active','Gorgeous','Green','Light Blue'],
                                 )
     villager_sim = user_sim_cls.get_cossim_villagers()
