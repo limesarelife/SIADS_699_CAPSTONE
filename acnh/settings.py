@@ -75,16 +75,29 @@ WSGI_APPLICATION = 'acnh.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DJANGO_DB_NAME'),
-        'HOST': os.environ.get('DJANGO_DB_HOST'),
-        'PORT': os.environ.get('DJANGO_DB_PORT'),
-        'USER': os.environ.get("DJANGO_DB_USER"),
-        'PASSWORD': os.environ.get("DJANGO_DB_PASSWORD"),
+if 'RDS_DB_NAME' in os.environ:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': os.environ.get('RDS_DB_NAME'),
+            'HOST': os.environ.get('RDS_HOSTNAME'),
+            'PORT': os.environ.get('RDS_PORT'),
+            'USER': os.environ.get("RDS_USERNAME"),
+            'PASSWORD': os.environ.get("RDS_PASSWORD"),
+        }
     }
-}
+
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': os.environ.get('DJANGO_DB_NAME'),
+            'HOST': os.environ.get('DJANGO_DB_HOST'),
+            'PORT': os.environ.get('DJANGO_DB_PORT'),
+            'USER': os.environ.get("DJANGO_DB_USER"),
+            'PASSWORD': os.environ.get("DJANGO_DB_PASSWORD"),
+        }
+    }
 
 
 # Password validation
