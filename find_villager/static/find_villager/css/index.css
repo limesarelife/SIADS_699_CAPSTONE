@@ -142,14 +142,15 @@ margin-bottom: 20px;
 .text-h1{
     color:ivory;
     /* color: #9b6731; */
-    font-size: 40px;
+    font-size: larger;
     font-family: 'Varela Round';
     font-weight: bold;
 }
 .para-style-int{
     /* color:#9b6731; */
     color: ivory;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: smaller;
     font-family: 'Varela Round';
     font-weight: bold;
 }
