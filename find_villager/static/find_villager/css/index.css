@@ -142,7 +142,7 @@ margin-bottom: 20px;
 .text-h1{
     color:ivory;
     /* color: #9b6731; */
-    font-size: larger;
+    font-size: 60%;
     font-family: 'Varela Round';
     font-weight: bold;
 }
@@ -150,7 +150,7 @@ margin-bottom: 20px;
     /* color:#9b6731; */
     color: ivory;
     /* font-size: 18px; */
-    font-size: smaller;
+    font-size: small;
     font-family: 'Varela Round';
     font-weight: bold;
 }
