@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['SIADS-699-CAPSTONE2-dev.us-east-1.elasticbeanstalk.com','whatacnhvillagerareyou.com','www.whatacnhvillagerareyou.com','127.0.0.1:8000']
+ALLOWED_HOSTS = ['SIADS-699-CAPSTONE2-dev.us-east-1.elasticbeanstalk.com','whatacnhvillagerareyou.com','www.whatacnhvillagerareyou.com']
 
 
 # Application definition
@@ -137,9 +137,9 @@ STATIC_URL = 'static/'
 
 STATIC_ROOT = BASE_DIR / "static"
 
-SESSION_COOKIE_SECURE = True
+# SESSION_COOKIE_SECURE = True
 
-CSRF_COOKIE_SECURE = True
+# CSRF_COOKIE_SECURE = True
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
