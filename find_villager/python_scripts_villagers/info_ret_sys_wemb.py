@@ -21,9 +21,9 @@ class RetrievalSystem_wb:
         
         villagers_lines = self.villagers[['Species','Personality','Hobby',
                                           'Astrology','Genre','Style 1','Style 2','Color 1','Color 2']].copy()
-        # print(user_list)
+        
         villagers_lines.loc[len(villagers_lines)] = user_list # type: ignore
-        # print(villagers_lines.tail(1))
+        
         villagers_lines = villagers_lines.apply(lambda x: x.astype(str).str.lower())
         self.villagers_arr = villagers_lines.to_numpy()
         
@@ -82,5 +82,4 @@ if __name__ == "__main__":
                                 )
     villager_sim = user_sim_cls.get_cossim_villagers()
     v_id1, v_id2 = user_sim_cls.finalize_sim_villagers(villager_sim)
-    # print(v_id1, v_id2)
     v_name1, v_img1 = user_sim_cls.return_image(v_id1, v_id2)

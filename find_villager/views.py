@@ -13,10 +13,10 @@ def home_view(request):
             # ...
             # redirect to a new URL:
             
-            # print(form.cleaned_data)
+            
             user_dict = form.cleaned_data
             user_list_this = list(user_dict.values())[1:11]
-            # print(user_list_this)
+            
 
             user_sim_cl = info_ret_sys_lsi.RetrievalSystem(path_file = ("./python_scripts_villagers/"), num_topics=9,
                               user_list = user_list_this
@@ -37,10 +37,7 @@ def home_view(request):
             
             vil_info = {"Option_1":str(v_name1),"Villager_1":str(v_img1),
                                "Option_2":str(v_name2),"Villager_2":str(v_img2)}
-            # print(vil_info)
-            # return render(request, 'find_villager/results.html', context=vil_info)
-            # return redirect(reverse('find_villager_home_app:final_vil', kwargs=vil_info),
-            #                 Option_1=v_name1, Villager_1=v_img1, Option_2=v_name2, Villager_2=v_img2)
+            
         
             response = redirect(reverse('find_villager_home_app:response_quiz'))
             response.set_cookie("Option_1",v_name1, max_age=30)
@@ -49,7 +46,7 @@ def home_view(request):
             response.set_cookie("Villager_2",v_img2, max_age=30)
             return response
         else:
-            # print(form.cleaned_data)
+            
             
             return HttpResponse("Please fill out all questions.")
     # print(request.POST)
@@ -59,30 +56,28 @@ def home_view(request):
 def villager_response(request):
     if request.method == 'POST':
         form = VillagerResponse(request.POST)
-        # print(request.POST)
+        
         if form.is_valid():
             # process the data in form.cleaned_data as required
             # ...
             # redirect to a new URL:
             print(form.cleaned_data)
-            # print(form.cleaned_data)
+          
             form_data = VillagerResponseDB(villager_option=form.cleaned_data['villager_option'],
                                            villager_why = form.cleaned_data['villager_why'])
             form_data.save()
-            # user_list_this = list(user_dict.values())
+         
             return render(request, 'find_villager/thankyou.html')
-        # redirect(reverse('find_villager_home_app:final_vil', kwargs=vil_info),
-        #                     Option_1=v_name1, Villager_1=v_img1, Option_2=v_name2, Villager_2=v_img2)
+        
         else:
-            # print(form.cleaned_data)
-            # print(form.cleaned_data)
+            
             return HttpResponse("Please fill out all questions.")
     else:
         vi1 = request.COOKIES["Option_1"]
         vim1 = request.COOKIES["Villager_1"]
         vi2 = request.COOKIES["Option_2"]
         vim2 = request.COOKIES["Villager_2"]
-    # print(request.POST)
+    
         return render(request, 'find_villager/results.html', context = {"Option_1":vi1,"Villager_1":vim1,
                                                                     "Option_2":vi2,"Villager_2":vim2})
 

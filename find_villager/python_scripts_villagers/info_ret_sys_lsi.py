@@ -17,10 +17,10 @@ class RetrievalSystem(object):
         RetrievalSystem setup for lsi, creation of doc term matrix, and query vectors
         """
         self.path_file = path_file
-        # self.villagers = pd.read_csv("villagers_final.csv")
+        
         self.villagers = pd.read_csv(self.path_file+"villagers_final.csv")
         self.user_list = user_list
-        # self.villagers_id= pd.read_csv("villagers_id.csv")
+       
         self.villagers_id= pd.read_csv(self.path_file+"villagers_id.csv")
         
         self.villagers.drop(columns=['Unnamed: 0'],inplace=True)
@@ -104,15 +104,6 @@ class RetrievalSystem(object):
         v_name2 = vil_2_tup[0]
         img_vil1 = f"find_villager/images/villagers/{vil_1_tup[1]}.png"
         img_vil2 = f"find_villager/images/villagers/{vil_2_tup[1]}.png"
-        # url_vil1 = f'https://acnhapi.com/v1a/images/villagers/{vil_1_tup[1]}'
-        # response_vil1 = requests.get(url_vil1)
-        # img_vil1 = Image.open(BytesIO(response_vil1.content))
-        # img_vil1.show(title = str(v_name1))
-
-        # url_vil2 = f'https://acnhapi.com/v1a/images/villagers/{vil_2_tup[1]}'
-        # response_vil2 = requests.get(url_vil2)
-        # img_vil2 = Image.open(BytesIO(response_vil2.content))
-        # img_vil2.show(title = str(v_name2))
 
         return v_name1, img_vil1
     
@@ -123,6 +114,4 @@ if __name__ == "__main__":
     villager_1, villager_2 = user_sim_cl.retrieve_n_rank_docs()
     v_id1, v_id2 = user_sim_cl.get_villagers_id(vil_1 = villager_1, vil_2 = villager_2)
     v_name1, v_img1 = user_sim_cl.return_image(v_id1, v_id2)
-    
-    # print(v_id1, v_id2)
     
