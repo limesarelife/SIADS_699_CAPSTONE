@@ -12,7 +12,7 @@ The determination of a user's villager most “like” them happens via a websit
 
 ## Objective
 
-Our ultimate objective for our capstone project was to develop a full-stack web app that includes an information retrieval with ranking for breaking ties that is capable of suggesting Animal Crossing Villager that best matches the user's preferences, based on the options selected in the drop-down quiz and similarity rating. Our Minimum Viable Product (MVP), consists of utilizing several Python libraries, including Pandas, Numpy, and Sklearn for implementing cosine similarity and using Django for front end-to-back end web development; connecting the website with the information retrieval systems to ingest and utilize the user's quiz responses. For web design, we used HTML and CSS, and created an Animal Crossing New Horizons aesthetic. From the frontend to backend we are storing the user responses to the second quiz (after the villager options are presented to the user) in a Postgres database table in order to see which information retrieval system is preferred. In order to manage DNS and hosting, we utilized various AWS products/services such as AWS Route 53 for DNS, and deployment via AWS Elastic Beanstalk which provides and spins up EC2 instances and load balancers in order to run our app which connects to a AWS Postgres RDS to store the second quiz responses.  We really enjoy the platform as a service model for small projects such as our given that AWS Elastic Beanstalk handles and scales easily. Ultimately our goal was to apply the skills we learned in our Cloud Computing, Recommender Systems and Machine Learning Pipelines classes to achieve our objective of a fully deployed, end-to-end web application, inclusive of the information retrieval system, on AWS.
+Our ultimate objective for our capstone project was to develop a full-stack web app that includes an information retrieval with ranking for breaking ties that is capable of suggesting Animal Crossing Villager that best matches the user's preferences, based on the options selected in the drop-down quiz and similarity rating. Our Minimum Viable Product (MVP), consists of utilizing several Python libraries, including Pandas, Numpy, and Sklearn for implementing cosine similarity and using Django for front end-to-back end web development; connecting the website with the information retrieval systems to ingest and utilize the user's quiz responses. For web design, we used HTML and CSS, and created an Animal Crossing New Horizons aesthetic. From the frontend to backend we are storing the user responses to the second quiz (after the villager options are presented to the user) in a Postgres database table in order to see which information retrieval system is preferred. In order to manage DNS and hosting, we utilized various AWS products/services such as AWS Route 53 for DNS, and deployment via AWS Elastic Beanstalk which provides and spins up EC2 instances and load balancers in order to run our app which connects to a AWS Postgres RDS to store the second quiz responses.  We really enjoy the platform as a service model for small projects, such as ours, given that AWS Elastic Beanstalk handles and scales easily. Ultimately our goal was to apply the skills we learned in our Cloud Computing, Recommender Systems and Machine Learning Pipelines classes to achieve our objective of a fully deployed, end-to-end web application, inclusive of the information retrieval system, on AWS.
 
 ## Framework
 
@@ -31,7 +31,9 @@ Built with:
 ## Installation
 
 This project was built using python - Django. For setting up, firstly ensure you have python downloaded and installed, at least 3.7 or newer.  Then proceed to install Django in your command prompt.
+
     pip install django
+    
 To read about Django go to the documentation here:
 https://docs.djangoproject.com/en/4.2/
 
@@ -108,7 +110,11 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 
 We have already added all needed details for Postgres to properly interact with the application/project in the requirements.txt and in the settings.py and models.py so no need to change anything.
 
-Once pgadmin is set up in your code editor, run the application by typing python manage.py runserver in your terminal to make sure everything is working as should and there are no other configuration or settings changes to be made and all the dependencies are installed.  If everything is okay the next step is to migrate our user response data from the second quiz to the database.  To do this run the following code:
+Once pgadmin is set up in your code editor, run the application by typing the command below in your terminal to make sure everything is working as should and there are no other configuration or settings changes to be made and all the dependencies are installed.
+
+    python manage.py runserver
+
+If everything is okay the next step is to migrate our user response data from the second quiz to the database.  To do this run the following code:
 
     python manage.py makemigrations
     python manage.py migrate 
@@ -150,6 +156,7 @@ Next create the Elastic Beanstalk environment by running the following in your t
 4. Spot Fleet Requests (select No)
 
 This will take a few minutes at least so grab a snack and wait. We are basically waiting on AWS to create and launch all our various resources needed such as EC2 instances, load balancers, security settings/permissions and auto scaling groups.
+
 Go into your settings.py file and in the ALLOWED_HOSTS add the DNS CNAME to the list of allowed hosts. 
 
 To deploy this application, run the deploy command:
@@ -165,11 +172,12 @@ Now, there will be errors but by typing eb console it will open up the console o
     Username: pick a username
     Password: pick a strong password
 
-Next step in the same configuration area after the database is set up and applied to the environment go ahead and go to software and scroll all the way down.  In the environment variables add the DJANGO_SECRET_KEY and the string value hit apply/save.
+Next step in the same configuration area, after the Postgres RDS is to set up and applied to the environment, go ahead and go to software click edit and scroll all the way down.  In the environment variables add the DJANGO_SECRET_KEY and the string value hit apply/save.
 
-As mentioned a few times after the environment update is done, Elastic Beanstalk will automatically pass the following database credentials and secret key to our Django app via the settings.py as variables.  We did all the settings.py for you and configurations in the yml file for making migrations and container commands.
+As mentioned a few times after the environment update is done, Elastic Beanstalk will automatically pass the following database credentials and secret key to our Django app via the settings.py as variables and fetch the values via the os.environ.get().  We did all the settings.py for you and configurations in the yml file for making migrations and container commands.
 
 Now, git add . and git commit all the various changes we have made. Elastic Beanstalk always uses the last commit we did so it’s important that as changes and configurations are made we commit to GitHub. Lastly!!!
+
     eb deploy
     eb open
 
@@ -178,9 +186,10 @@ Now, git add . and git commit all the various changes we have made. Elastic Bean
 ## Villager Analysis:
 Generate data used for application and used in the villager analysis downstream. 
 Order of run for data creation: 
-1. villagers_acnh.py: Combines all ACP Poll data per villager. pytrends_script.py: Utilizes each villager name and pulls historical number of searches on Google via PyTrends and related queries (searches) - DO NOT RUN unless you fetch cookies and place them in a gitignore and curl into the network.
-2. villagers_final_connect.py: Combines the resultant csv files from the villagers_acnh.py and pytrends_script.py
-3. villager_features.py: adds needed features for the villagers in order to create the user questionnaire for the 4. information retrieval and similarity measure. For example, astrology signs and music genres are added in this script, resultant file is the villager_final.csv which is used in the Django application/project
+1. villagers_acnh.py: Combines all ACP Poll data per villager. 
+2. pytrends_script.py: Utilizes each villager name and pulls historical number of searches on Google via PyTrends and related queries (searches) - DO NOT RUN unless you fetch cookies and place them in a gitignore and curl into the network.
+3. villagers_final_connect.py: Combines the resultant csv files from the villagers_acnh.py and pytrends_script.py
+4. villager_features.py: adds needed features for the villagers in order to create the user questionnaire for the information retrieval and similarity measure. For example, astrology signs and music genres are added in this script, resultant file is the villager_final.csv which is used in the Django application/project
 
 Utilized ACP Polls and Google Trends via PyTrends in order to find overall popularity of a villager.
 
@@ -226,8 +235,10 @@ https://seaborn.pydata.org/
 https://matplotlib.org/
 https://plotly.com/python/plotly-express/
 
-All the JSON data from this API is under CC BY 4.0 license, the images and music assets are the sole property of Nintendo.
+Villager images:
 https://github.com/alexislours/ACNHAPI/tree/master/images/villagers
+All the JSON data from this API is under CC BY 4.0 license, the images and music assets are the sole property of Nintendo.
+
 
 
 
