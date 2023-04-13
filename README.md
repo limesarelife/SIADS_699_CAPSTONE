@@ -34,7 +34,7 @@ This project was built using python - Django. For setting up, firstly ensure you
 
     pip install django
     
-To read about Django go to the documentation here:
+To read about Django go to the documentation here:       
 https://docs.djangoproject.com/en/4.2/
 
 ### Clone the Repository
@@ -61,7 +61,7 @@ Next, activate the virtual environment by running the following command (this is
 
 To deactivate the virtual environment just type deactivate into the terminal.
 
-**Note:** You should exclude your virtual environment directory from your version control system using .gitignore or similar.  To read more information about virtual environments go here:
+**Note:** You should exclude your virtual environment directory from your version control system using .gitignore or similar.  To read more information about virtual environments go here:      
 https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
 
 Once that is done, install the packages and dependencies used in this application/project within the requirements.txt file. You do not need to pip freeze at this point because we have listed all needed packages/dependencies for you that are needed to create and run this application.  To do this, run the following commands:
@@ -82,10 +82,10 @@ Also, for best practices when running in a non-production environment you can sw
 Download and install pgadmin.  For macOS it's best to do so via HomeBrew and follow the instructions in the articles below.  You will want to create a user for your pgadmin as well a database and then login credentials for your user. 
 
 These two articles provide great instructions on how to install:
-Basic Homebrew Postgresql instructions:
+Basic Homebrew Postgresql instructions:       
 https://www.moncefbelyamani.com/how-to-install-postgresql-on-a-mac-with-homebrew-and-lunchy/
 
-This article explains how to install as well as create a new database and create a new user and alter the role and set a password:
+This article explains how to install as well as create a new database and create a new user and alter the role and set a password:      
 https://www.sqlshack.com/setting-up-a-postgresql-database-on-mac/
 
 You will want to save all your environment variables to your machine inorder to utilize os.environ.get() when connecting to your Postgres database, never save or commit information to a public repository as it can introduce malicious attacks on your application/project. 
@@ -105,7 +105,7 @@ Variables you will want to save locally will be ‘DJANGO_DB_NAME’, ‘DJANGO_
     }
 
 
-Django can easily use operating system environment variables to connect via the settings.py file to your Postgres database, to read more about Django Settings go here: 
+Django can easily use operating system environment variables to connect via the settings.py file to your Postgres database, to read more about Django Settings go here:         
 https://docs.djangoproject.com/en/4.2/topics/settings/
 
 We have already added all needed details for Postgres to properly interact with the application/project in the requirements.txt and in the settings.py and models.py so no need to change anything.
@@ -133,7 +133,11 @@ We have already created the django.config file for this application/project so n
 
 **Note:** There will be various permissions settings that will need to be applied to the various roles within your platforms application and IAMUser Role, these can easily be changed in the AWS console. Examples would be  AmazonEC2FullAccess, AWSElasticeBeanstalkFullAccess,and PowerUserAccess.
 
-**Make sure that you are in DEV_699.**  Next run, eb init, this will initialize Elastic Beanstalk which will generate questions below:
+**Make sure that you are in DEV_699.**  Next run:   
+
+    eb init
+    
+This will initialize Elastic Beanstalk which will generate questions below:
 
 1. Application Name (select default)
 2. It appears that you are using Python (select Y)
@@ -236,7 +240,8 @@ https://matplotlib.org/
 https://plotly.com/python/plotly-express/
 
 Villager images:
-https://github.com/alexislours/ACNHAPI/tree/master/images/villagers
+
+https://github.com/alexislours/ACNHAPI/tree/master/images/villagers         
 All the JSON data from this API is under CC BY 4.0 license, the images and music assets are the sole property of Nintendo.
 
 
