@@ -10,48 +10,52 @@ There are 391 villagers in the ACNH universe, each with unique personalities and
 
 The determination of a user's villager most “like” them happens via a website quiz which involves utilizing unique villager personalities and traits of each of the 391 villagers in Animal Crossing: New Horizons (ACNH).  An information retrieval system was built which takes into account the characteristics of each villager and matches them with the user's preferences and personality traits. For example, if a user indicates that they are lazy and into music, the system might match them with a villager who is also lazy and enjoys listening to music.  If there is a tie between multiple villagers that are matched with the user's personality, the system utilizes villager overall popularity values to break ties. Villager overall popularity values are determined by the Google Trends and ACP Polls total values combined for a villager.  Overall, this quiz provides a fun and interactive way for users to engage with the ACNH universe and connect with a villager that they can relate to on a personal level. 
 
-##Objective
+## Objective
 
 Our ultimate objective for our capstone project was to develop a full-stack web app that includes an information retrieval with ranking for breaking ties that is capable of suggesting Animal Crossing Villager that best matches the user's preferences, based on the options selected in the drop-down quiz and similarity rating. Our Minimum Viable Product (MVP), consists of utilizing several Python libraries, including Pandas, Numpy, and Sklearn for implementing cosine similarity and using Django for front end-to-back end web development; connecting the website with the information retrieval systems to ingest and utilize the user's quiz responses. For web design, we used HTML and CSS, and created an Animal Crossing New Horizons aesthetic. From the frontend to backend we are storing the user responses to the second quiz (after the villager options are presented to the user) in a Postgres database table in order to see which information retrieval system is preferred. In order to manage DNS and hosting, we utilized various AWS products/services such as AWS Route 53 for DNS, and deployment via AWS Elastic Beanstalk which provides and spins up EC2 instances and load balancers in order to run our app which connects to a AWS Postgres RDS to store the second quiz responses.  We really enjoy the platform as a service model for small projects such as our given that AWS Elastic Beanstalk handles and scales easily. Ultimately our goal was to apply the skills we learned in our Cloud Computing, Recommender Systems and Machine Learning Pipelines classes to achieve our objective of a fully deployed, end-to-end web application, inclusive of the information retrieval system, on AWS.
 
-##Framework
+## Framework
+
 Built with:
--Django
--AWS Elastic Beanstalk & AWS RDS (Postgres)
+- Django
+- AWS Elastic Beanstalk & AWS RDS (Postgres)
 
-##Features:
--Two Information Retrieval Systems
--Villager Analysis
--Local set up with Postgres via pgadmin
--Production setup with AWS Elastic Beanstalk
--Works on Safari, Google Chrome, Mozilla and Microsoft Edge browsers
+## Features:
 
-##Installation
+- Two Information Retrieval Systems
+- Villager Analysis
+- Local set up with Postgres via pgadmin
+- Production setup with AWS Elastic Beanstalk
+- Works on Safari, Google Chrome, Mozilla and Microsoft Edge browsers
+
+## Installation
+
 This project was built using python - Django. For setting up, firstly ensure you have python downloaded and installed, at least 3.7 or newer.  Then proceed to install Django in your command prompt.
-pip install django
+    pip install django
 To read about Django go to the documentation here:
 https://docs.djangoproject.com/en/4.2/
 
-###Clone the Repository
+### Clone the Repository
 
 To clone the repo, run these lines of code in your terminal:
 
 You will want to change directory into the DEV_699 branch, that is where the Django application and its project folder and all requirements reside. 
 
- git clone https://github.com/limesarelife/SIADS_699_CAPSTONE.git
+    git clone https://github.com/limesarelife/SIADS_699_CAPSTONE.git
 
- cd DEV_699
+    cd DEV_699
 
 Why a separate branch? Well, we will be adding, overtime, more applications to this project as a way to stay connected after our capstone project so this is not the final version of this or the main branch - we also love playing ACNH.  Message us for our island codes or to be Switch friends 😀
-Virtual environment
+
+### Virtual environment
 
 Before installing the packages required for this app/project you will need to create a virtual environment. Create virtual environment and name it, we are calling ours venv:
 
- python3 -m venv venv
+    python3 -m venv venv
 
 Next, activate the virtual environment by running the following command (this is for Unix/macOS):
 
- source venv/bin/activate
+    source venv/bin/activate
 
 To deactivate the virtual environment just type deactivate into the terminal.
 
@@ -60,15 +64,16 @@ https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-e
 
 Once that is done, install the packages and dependencies used in this application/project within the requirements.txt file. You do not need to pip freeze at this point because we have listed all needed packages/dependencies for you that are needed to create and run this application.  To do this, run the following commands:
 
- pip install -r requirements.txt
+    pip install -r requirements.txt
 
 
-##How to use - Run on Local Server
+## How to use - Run on Local Server
 
 **Note:** In the settings.py file for ALLOWED_HOSTS in the list add on your local host to run this locally. Never set or leave the Allowed Hosts as ‘*’ - this is dangerous and bad practice.
 
 Example: 
- ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+
+    ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 Also, for best practices when running in a non-production environment you can switch DEBUG = False to DEBUG = True if you wish to do so.
 
@@ -112,11 +117,11 @@ Once pgadmin is set up in your code editor, run the application by typing python
 
 *Now you're running locally, congrats!*
 
-##How to use - Run/Host with AWS Elastic Beanstalk
+## How to use - Run/Host with AWS Elastic Beanstalk
 
 To get started with AWS Elastic Beanstalk, you will need to create an AWS account here. After creating your AWS account and an IAMuser role account with programmatic access (you will want the key and secret), make sure that your virtual environment, venv, is activated and install the AWS EB CLI in it. After installation, verify that it has been installed correctly.
 
- pip install awsebcli
+    pip install awsebcli
 
 We have already created the django.config file for this application/project so no need to change anything (initialization of the RDS as well as the config for the WGSI).  
 
@@ -137,7 +142,7 @@ After completing the eb init questionnaire above a hidden directory named ".elas
 
 Next create the Elastic Beanstalk environment by running the following in your terminal. This also is followed by a few prompts to answer.
 
- eb create
+    eb create
 
 1. Environment Name (select default, this refers to the name of your EB environment)
 2. DNS CNAME Prefix (select default for now, this prefix is the one to be used when setting up your domain name)
@@ -149,7 +154,7 @@ Go into your settings.py file and in the ALLOWED_HOSTS add the DNS CNAME to the 
 
 To deploy this application, run the deploy command:
 
- eb deploy
+    eb deploy
 
 Now, there will be errors but by typing eb console it will open up the console on AWS, we will need to go to the EB instance running that we just created and go to the configurations and scroll all the way down and go to database, select edit and set up our default RDS along with the username and password (remember these).  Note that AWS handles all these environment variables for you so no need to add them as environment variables and as mentioned previously we already have added these to the .ebextension and django.config file for you.  You will want the following set up and then hit apply this will take a minute to update the environment:
 
@@ -165,12 +170,12 @@ Next step in the same configuration area after the database is set up and applie
 As mentioned a few times after the environment update is done, Elastic Beanstalk will automatically pass the following database credentials and secret key to our Django app via the settings.py as variables.  We did all the settings.py for you and configurations in the yml file for making migrations and container commands.
 
 Now, git add . and git commit all the various changes we have made. Elastic Beanstalk always uses the last commit we did so it’s important that as changes and configurations are made we commit to GitHub. Lastly!!!
- eb deploy
- eb open
+    eb deploy
+    eb open
 
 *And your up and running 🎉*
 
-##Villager Analysis:
+## Villager Analysis:
 Generate data used for application and used in the villager analysis downstream. 
 Order of run for data creation: 
 1. villagers_acnh.py: Combines all ACP Poll data per villager. pytrends_script.py: Utilizes each villager name and pulls historical number of searches on Google via PyTrends and related queries (searches) - DO NOT RUN unless you fetch cookies and place them in a gitignore and curl into the network.
@@ -193,7 +198,8 @@ Option 1 (from LSI) and Villager Option 2 (from Word Embeddings).  Results are p
 1. User Information Retrieval System LSI vs Word Embeddings visual
 
 
-##Attribution:
+## Attribution:
+
 https://docs.djangoproject.com/en/4.2/
 https://docs.djangoproject.com/en/4.2/topics/settings/
 https://www.sqlshack.com/setting-up-a-postgresql-database-on-mac/
@@ -203,10 +209,12 @@ https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3.html
 https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-options-general.html#command-options-general-elasticbeanstalkapplicationenvironment
 
 To add your own purchased domain name follow these steps:
+
 https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-beanstalk-environment.html#routing-to-beanstalk-environment-create-alias-procedure
 https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/customdomains.html
 
 Villager Analysis:
+
 https://www.animalcrossingportal.com/tier-lists/new-horizons/all-villagers/
 https://github.com/GeneralMills/pytrends
 https://scikit-learn.org/stable/
