@@ -26,7 +26,7 @@ Built with:
 - Villager Analysis
 - Local set up with Postgres via pgadmin
 - Production setup with AWS Elastic Beanstalk
-- Works on Safari, Google Chrome, Mozilla and Microsoft Edge browsers
+- Works on Safari, Google Chrome, Mozilla and Microsoft Edge browsers (Works on desktop and ipad/tablet - not for mobile devices)
 
 ## Installation
 
