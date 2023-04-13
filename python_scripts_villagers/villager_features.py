@@ -108,6 +108,6 @@ class create_vil_feat():
         
 
 
-get_astro_genre_sign = create_vil_feat("./python_villagers_create/")
+get_astro_genre_sign = create_vil_feat("./python_scripts_villagers/")
 astro_added  = get_astro_genre_sign.villager_add_astro()
-genre_added = get_astro_genre_sign.music_genre(astro_added,genre_file="./python_villagers_create/genre_groupings.csv")
+genre_added = get_astro_genre_sign.music_genre(astro_added,genre_file="./python_scripts_villagers/genre_groupings.csv")

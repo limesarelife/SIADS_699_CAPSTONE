@@ -124,5 +124,5 @@ start_acp = ACP_Combine("./ACP_POLLS/")
 acp2020 = start_acp.get2020ACP()
 acp2021 = start_acp.get2021ACP()
 acp2022 = start_acp.get2022ACP()
-final_acp = start_acp.combine_clean_ACP(acp2020,acp2021,acp2022,path_out="../SIADS_699_CAPSTONE/python_villagers_create/")
+final_acp = start_acp.combine_clean_ACP(acp2020,acp2021,acp2022,path_out="../SIADS_699_CAPSTONE/python_scripts_villagers/")
 
