@@ -1,8 +1,11 @@
 # SIADS_699_CAPSTONE
- TEAM ANIMAL CROSSING
+ TEAM ANIMAL CROSSING 
+ Jacqueline Skunda, Malini Varadarajan, Tamara Qawasmeh
+ 
  
  ![alt text](https://github.com/limesarelife/SIADS_699_CAPSTONE/blob/main/BANNER-TEST-AC.png)
-   # What ACNH Villager Are You App
+   # What ACNH Villager Are You App 
+   ### V 1.0 2023-04-15
 
 Animal Crossing New Horizon (ACNH) is a Nintendo game that features user creativity by developing an island where villagers can come to visit and live as neighbors. The game allows players to create and customize their own island paradise by building infrastructure, landscaping, and decorating with furniture and other items. Players take on the role of a human avatar, who moves to the island, where they meet various animal villagers who also take up residence on the island overtime. These villagers have unique personalities and interests, and players can interact with them by engaging in conversations, completing tasks, and giving them gifts.In addition to designing and managing the island, players can also go fishing, catch bugs, and collect materials to craft items.
 
